@@ -1,0 +1,22 @@
+.login-form {
+    background-color: aquamarine;
+    width: 100%;
+    font-size: 20px;
+    /* max-width: 330px; */
+    padding: 65px;
+    margin: auto;
+    height: 100%;
+}
+/* .login-form{
+width: 700px;
+  height: 400px;
+  margin: 90px auto;
+  margin-top: -140px;
+  padding: 65px;
+  color: white;
+  padding-block-start: 100px;
+  position: relative;
+  border-style: 3px solid #f1f1f1;
+  opacity: 0.9;
+  border-radius: 20px;
+} */
