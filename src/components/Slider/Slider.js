@@ -1,5 +1,6 @@
 import React from "react";
-import { UncontrolledCarousel, Row, Col } from "reactstrap";
+import { UncontrolledCarousel } from "reactstrap";
+import './Slider.css';
 
 const items = [
   {
@@ -32,12 +33,17 @@ const items = [
   }
 ];
 
-const Carausel = () => (
-  <Row>
-    <Col md="8" className="mx-auto">
+const Slider = () => (
+
+  // <Row>
+  //   <Col md="6" className="mx-auto">
+  <div className="Slider">
+      
       <UncontrolledCarousel items={items} />
-    </Col>
-  </Row>
+      
+  </div>    
+  //   </Col>
+  // </Row>
 );
 
-export default Carausel;
+export default Slider;

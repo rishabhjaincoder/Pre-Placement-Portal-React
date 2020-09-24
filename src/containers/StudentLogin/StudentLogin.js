@@ -1,44 +1,50 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-const StudentLogin = () => {
+const StudentLogin = (props) => {
+
+    const [newPassword, setPassword] = useState(""); 
+    const [confirm, setConfirm] = useState("");
+    const [firstName, setFistName] = useState("");
+    const [lastName, setLastName] = useState("");
+
+    // const validateForm = () => {
+    //     return (firstName.length >0 && 
+    //             lastName.length > 0 && 
+    //             newPassword.length > 0 && 
+    //             newPassword===confirm
+    //     ); 
+    // }
+
+    const onClickHandler = () => {
+        console.log("Registered");
+    }
+
     return (
         <div>
             <Form className="student-login" autoComplete="off">
             <FormGroup>
                 <Label for="Newpass">New Password </Label>
-            <Input type="password" name="Newpass" id="Newpass" placeholder="Enter New password" />
+            <Input type="password" name="Newpass" id="Newpass" value={newPassword} placeholder="Enter New password" onChange={e => setPassword(e.target.value)}/>
             </FormGroup>
             <FormGroup>
                 <Label for="ConfPass">Confirm Password </Label>
-            <Input type="password" name="ConfPass" id="ConfPass" placeholder="Confirm Password" />
+            <Input type="password" name="ConfPass" id="ConfPass" value={confirm} placeholder="Confirm Password" onChange={e => setConfirm(e.target.value)}/>
             </FormGroup>
             <FormGroup>
                 <Label for="Firstname">First Name </Label>
-            <Input type="text" name="Firstname" id="Firstname" placeholder="Enter First Name" />
+            <Input type="text" name="Firstname" id="Firstname" value={firstName} placeholder="Enter First Name" onChange={e => setFistName(e.target.value)}/>
             </FormGroup>
             <FormGroup>
                 <Label for="LastName">Last Name </Label>
-            <Input type="text" name="LastName" id="LastName" placeholder="Enter Last Name" />
+            <Input type="text" name="LastName" id="LastName" value={lastName} placeholder="Enter Last Name" onChange={e => setLastName(e.target.value)}/>
             </FormGroup>
             <FormGroup>
                 <Label for="phone">Phone Number </Label>
             <Input type="text" name="phone" id="phone" placeholder="Enter Phone Number" />
             </FormGroup>
-            <FormGroup>
-                <Label for="address">Address </Label>
-            <Input type="textarea" name="address" id="address" placeholder="Enter Address" />
-            </FormGroup>
-            <FormGroup>
-                <Label for="semester"/>
-            <Input type="select" name="semester" id="semester">
-                <option>Semester 1</option>
-                <option>Semester 2</option>
-                <option>Semester 3</option>
-            </Input>
-            </FormGroup>
         
-            <Button>Register</Button>
+            <Button onClick={() => onClickHandler()}>Register</Button>
             </Form>
         </div>
     );

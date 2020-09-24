@@ -3,9 +3,7 @@ import './App.css';
 
 import StudentLogin from './containers/StudentLogin/StudentLogin';
 import Main from './containers/Main/Main';
-import { Route, Switch, withRouter} from 'react-router-dom';
-
-
+import { Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 const app = () => {
 
@@ -13,6 +11,7 @@ const app = () => {
     <Switch>
       <Route exact path="/" component={Main} />
       <Route path="/studentlogin" component={StudentLogin} /> 
+      <Redirect to="/"/>
     </Switch>
   );
 
