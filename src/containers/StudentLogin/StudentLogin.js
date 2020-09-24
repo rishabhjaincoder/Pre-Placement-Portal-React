@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './StudentLogin.css';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const StudentLogin = (props) => {
@@ -18,6 +19,7 @@ const StudentLogin = (props) => {
 
     const onClickHandler = () => {
         console.log("Registered");
+        // props.history.push('/dashboard');
     }
 
     return (

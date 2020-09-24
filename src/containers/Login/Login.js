@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import {Route} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 
@@ -14,8 +14,7 @@ const Login = (props) => {
   // }
 
   const onClickHandler = () => {
-    console.log("hello");
-    props.history.push('/studentlogin');
+    props.history.push('/dashboard');
   }
     
     return(
@@ -37,12 +36,12 @@ const Login = (props) => {
         </Input>
       </FormGroup>
         
-        <Button onClick={() => onClickHandler()}>Submit</Button>
-        <Button>Forgot Password</Button>
+        <Button onClick={() => onClickHandler()}>Submit</Button> &nbsp;
+        <Button>Forgot Password</Button> &nbsp;
         <Button>Sign Up</Button>
       </Form>
       </div>
     );
 }
 
-export default Login;
+export default withRouter(Login);
