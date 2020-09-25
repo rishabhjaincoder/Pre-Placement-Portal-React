@@ -3,6 +3,7 @@ import './Main.css';
 import Slider from '../../components/Slider/Slider';
 import Modal from '../../components/LoginModal/LoginModal';
 import Logo from '../../components/Logo/Logo';
+import Footer from '../../components/Footer/Footer';
 
 const Main = () => {
     return (
@@ -13,7 +14,7 @@ const Main = () => {
             <Modal/>
             <br/><br/>
             <Slider/>
-            
+            <Footer/>
         </div>
     );
 }

@@ -20,15 +20,19 @@ import Logo from '../Logo/Logo';
 //This is the navigation bar that will be visible on dashboard
 
 const NavBar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+    const toggle = () => setIsOpen(!isOpen);
 
-  const onClickHandler = () => {
-    props.history.push('/');
-}
+    const onClickHandler = () => {
+        props.history.push('/editprofile');
+    }
 
-  return (
+    const onLogoutHandler = () => {
+        props.history.push('/');
+    }
+
+    return (
     <div>
       <Navbar color="light" light expand="md">
           <Logo/> &nbsp; &nbsp; &nbsp;
@@ -61,7 +65,8 @@ const NavBar = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <Button onClick={() => onClickHandler()}> LOGOUT</Button>
+          <Button onClick={onClickHandler}>EDIT PROFILE</Button> &nbsp;
+          <Button onClick={onLogoutHandler}> LOGOUT</Button>
         </Collapse>
       </Navbar>
     </div>

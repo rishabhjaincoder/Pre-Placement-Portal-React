@@ -1,21 +1,18 @@
 import React from 'react';
 import RegisterModal from '../../components/RegisterModal/RegisterModal';
-import {Button} from 'reactstrap';
 import NavBar from '../../components/Navbar/NavBar';
+import Footer from '../../components/Footer/Footer';
 
 const Dashboard = (props) => {
-
-    // const onClickHandler = () => {
-    //     props.history.push('/');
-    // }
 
     return (
         <div>
             <NavBar/>
              <br/><br/>
             <RegisterModal/> <br/>
-            {/* <Button onClick={() => onClickHandler()}> LOGOUT</Button> <br/> <br/> */}
-            <Button>EDIT PROFILE</Button>
+            
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <Footer/>
         </div>
     );
 }

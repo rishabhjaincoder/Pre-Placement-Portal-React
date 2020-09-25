@@ -6,7 +6,7 @@ const StudentLogin = (props) => {
 
     const [newPassword, setPassword] = useState(""); 
     const [confirm, setConfirm] = useState("");
-    const [firstName, setFistName] = useState("");
+    const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
 
     // const validateForm = () => {
@@ -30,7 +30,7 @@ const StudentLogin = (props) => {
             </FormGroup>
             <FormGroup>
                 <Label for="Firstname">First Name </Label>
-            <Input type="text" name="Firstname" id="Firstname" value={firstName} placeholder="Enter First Name" onChange={e => setFistName(e.target.value)}/>
+            <Input type="text" name="Firstname" id="Firstname" value={firstName} placeholder="Enter First Name" onChange={e => setFirstName(e.target.value)}/>
             </FormGroup>
             <FormGroup>
                 <Label for="LastName">Last Name </Label>
