@@ -4,6 +4,7 @@ import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 
 const EditProfile = (props) => {
 
+    const [name, setName] = useState("");
     const [course, setCourse] = useState("");
     const [semester, setSemester] = useState("");
     const [address, setAddress] = useState(""); 
@@ -26,6 +27,10 @@ const EditProfile = (props) => {
     return (
         <div>
             <Form className="edit-profile" autoComplete="off">
+                <FormGroup>
+                    <Label for="name">Name </Label>
+                    <Input type="text" name="name" id="name" value={name} placeholder="Enter Name" onChange={e => setName(e.target.value)}/>
+                </FormGroup>
                 <FormGroup>
                     <Label for="course">Course </Label>
                     <Input type="text" name="course" id="course" value={course} placeholder="Enter your course" onChange={e => setCourse(e.target.value)}/>

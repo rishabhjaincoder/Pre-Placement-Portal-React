@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/JimsLogo.jpg';
+import logo from '../../assets/JIMSLogo.png';
 
 //This is the main logo of JIMS
 

@@ -31,12 +31,12 @@ const Login = (props) => {
         <FormGroup>
         <Label for="role">I am a </Label>
         <Input type="select" name="role" id="role">
-          <option>Student</option>
-          <option>Faculty</option>
+          <option key="1">Student</option>
+          <option key="2">Faculty</option>
         </Input>
       </FormGroup>
         
-        <Button onClick={() => onClickHandler()}>Submit</Button> &nbsp;
+        <Button onClick={onClickHandler}>Submit</Button> &nbsp;
         <Button>Forgot Password</Button> &nbsp;
         <Button>Sign Up</Button>
       </Form>

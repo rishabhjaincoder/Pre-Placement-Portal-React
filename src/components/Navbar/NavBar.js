@@ -3,7 +3,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
@@ -16,6 +15,7 @@ import {
 
 import {withRouter} from 'react-router-dom';
 import Logo from '../Logo/Logo';
+// import {NavLink} from 'react-router-dom';
 
 //This is the navigation bar that will be visible on dashboard
 
@@ -35,32 +35,48 @@ const NavBar = (props) => {
     return (
     <div>
       <Navbar color="light" light expand="md">
-          <Logo/> &nbsp; &nbsp; &nbsp;
-        <NavbarBrand>reactstrap</NavbarBrand>
+        <a href="/"><Logo/></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
               {/* <NavLink href="/components/">Components</NavLink> */}
-              <NavLink>About</NavLink>
+              <NavLink href="/about">About</NavLink>
             </NavItem>
+            &nbsp; &nbsp; &nbsp;
             <NavItem>
-              <NavLink>Contact</NavLink>
+              <NavLink href="/contact">Contact</NavLink>
             </NavItem>
+            &nbsp; &nbsp; &nbsp;
+            <NavItem>
+              <NavLink href="/about">View test score</NavLink>
+            </NavItem>
+            &nbsp; &nbsp; &nbsp;
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                View Resources
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  View test papers
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                  View assignments
                 </DropdownItem>
-                <DropdownItem divider />
+                <DropdownItem NavLink to="/ppt-section">
+                  View PPTs
+                </DropdownItem>
                 <DropdownItem>
-                  Reset
+                  View announcements
+                </DropdownItem>
+                <DropdownItem>
+                  View videos
+                </DropdownItem>
+                <DropdownItem>
+                  View weblinks/external resources
+                </DropdownItem>
+                <DropdownItem>
+                  View notes
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
