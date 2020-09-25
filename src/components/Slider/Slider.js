@@ -2,6 +2,8 @@ import React from "react";
 import { UncontrolledCarousel } from "reactstrap";
 import './Slider.css';
 
+// This is the slider that is visible on the main page
+
 const items = [
   {
     src: require('../../assets/Image1.jpg'),

@@ -3,6 +3,8 @@ import './LoginModal.css';
 import { Button, Modal } from 'reactstrap';
 import Login from '../../containers/Login/Login';
 
+//This the modal that will be visible on the main page for login
+
 const LoginModal = (props) => {
   const {
     className

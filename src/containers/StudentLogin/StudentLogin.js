@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './StudentLogin.css';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 const StudentLogin = (props) => {
 
@@ -16,11 +16,6 @@ const StudentLogin = (props) => {
     //             newPassword===confirm
     //     ); 
     // }
-
-    const onClickHandler = () => {
-        console.log("Registered");
-        // props.history.push('/dashboard');
-    }
 
     return (
         <div>
@@ -45,8 +40,7 @@ const StudentLogin = (props) => {
                 <Label for="phone">Phone Number </Label>
             <Input type="text" name="phone" id="phone" placeholder="Enter Phone Number" />
             </FormGroup>
-        
-            <Button onClick={() => onClickHandler()}>Register</Button>
+       
             </Form>
         </div>
     );
