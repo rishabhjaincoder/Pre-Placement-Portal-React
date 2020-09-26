@@ -6,13 +6,21 @@ import Logo from '../../components/Logo/Logo';
 import Footer from '../../components/Footer/Footer';
 
 const Main = () => {
+
+    // window.open(<LoginModal/>);
+    // setTimeout(() => (<LoginModal/>), 2000);
+            
     return (
         <div className="Main">
             <Logo/>
-            <h1> Jagan Institute of Management Studies </h1>
+            <h1> JIMS Rohini </h1>
+            <h2> Pre - Placement Portal </h2>
             <br/>
+           
             <LoginModal/>
-            <br/><br/>
+
+            {/* <LoginModal/> */}
+            <br/>
             <Slider/>
             <Footer/>
         </div>

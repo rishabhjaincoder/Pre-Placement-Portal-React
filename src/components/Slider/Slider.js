@@ -20,14 +20,14 @@ const items = [
     key: "2",
   },
   {
-    src: require('../../assets/Image3.png'),
+    src: require('../../assets/Image1.jpg'),
     altText: "Slide 3",
     caption: "",
     header: "",
     key: "3",
   },
   {
-    src: require('../../assets/Image4.png'),
+    src: require('../../assets/Image2.jpg'),
     altText: "Slide 4",
     caption: "",
     header: "",
@@ -39,10 +39,8 @@ const Slider = () => (
 
   // <Row>
   //   <Col md="6" className="mx-auto">
-  <div className="Slider">
-      
-      <UncontrolledCarousel items={items} />
-      
+  <div className="slider">  
+    <UncontrolledCarousel items={items} />  
   </div>    
   //   </Col>
   // </Row>
