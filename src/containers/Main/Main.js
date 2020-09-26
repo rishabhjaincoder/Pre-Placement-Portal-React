@@ -13,7 +13,7 @@ const Main = () => {
     return (
         <div className="Main">
             <Logo/>
-            <h1> JIMS Rohini </h1>
+            <h1> Jagan Institute Of Management Studies </h1>
             <h2> Pre - Placement Portal </h2>
             <br/>
            
