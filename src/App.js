@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 
 import StudentLogin from './containers/StudentLogin/StudentLogin';
-import Dashboard from './containers/Dashboard/Dashboard';
+import StudentDashboard from './containers/StudentDashboard/StudentDashboard';
+import FacultyDashboard from './containers/FacultyDashboard/FacultyDashboard';
 import EditProfile from './containers/EditProfile/EditProfile';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -15,7 +16,8 @@ const app = () => {
     <Switch>
       <Route exact path="/" component={Main} />
       <Route path="/studentlogin" component={StudentLogin} /> 
-      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/studentdashboard" component={StudentDashboard} />
+      <Route path="/facultydashboard" component={FacultyDashboard} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
       <Route path="/editprofile" component={EditProfile} />

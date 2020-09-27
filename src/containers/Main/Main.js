@@ -14,11 +14,22 @@ const Main = () => {
     return (
         <div className="Main">
             <Logo/>
-            <p>
-            <b><h1 style= {{fontFamily: "Berlin sans FB"}, {fontSize: "300%"}, {fontWeight: "bold"}}> Jagan Institute of Management Studies</h1></b>
+            <p align="center">
+            <b>
+                <h1 style= {{
+                        fontFamily: "Berlin sans FB", 
+                        fontSize: "300%", 
+                        fontWeight: "bold"
+                        }}
+                >
+                Jagan Institute of Management Studies</h1></b>
             <h2 style= {{fontFamily: "Verdana"}}>Pre-placement Portal</h2>
             </p>
-            <LoginModal/>
+            
+                <div align="right">
+                    <LoginModal/>
+                </div>
+            
             <Slider/>
             <Footer/>
         </div>

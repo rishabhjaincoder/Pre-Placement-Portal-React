@@ -1,28 +1,26 @@
 import React from 'react';
 import RegisterModal from '../../components/RegisterModal/RegisterModal';
-import NavBar from '../../components/Navbar/NavBar';
+import FacultyNavBar from '../../components/FacultyNavBar/FacultyNavBar';
 import Footer from '../../components/Footer/Footer';
 import AddNote from '../../components/AddNote/AddNote';
 import Calendar from '../../components/Calender/Calendar';
-const Dashboard = (props) => {
+const FacultyDashboard = (props) => {
 
     return (
         <div>
-            <NavBar/>
-             <br/><br/>
-             <Calendar/>
-             <AddNote/>
-             <br/><br/><br/>
-            
+            <FacultyNavBar/>
+            <br/><br/>
+            <Calendar/>
+            <AddNote/>
+            <br/><br/><br/>
+            <div align="right">
+                NOTICES
+            </div>
             <RegisterModal/> 
             <br/>
-            
-           
-            
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <Footer/>
         </div>
     );
 }
 
-export default Dashboard;
+export default FacultyDashboard;

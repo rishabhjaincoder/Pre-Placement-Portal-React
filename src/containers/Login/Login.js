@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
+import "./Login.css";
 import {withRouter} from 'react-router-dom';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-
-import "./Login.css";
+// import StudentDashboard from '../StudentDashboard/StudentDashboard';
+// import FacultyDashboard from '../FacultyDashboard/FacultyDashboard';
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -14,8 +15,16 @@ const Login = (props) => {
   // }
 
   const onClickHandler = () => {
-    props.history.push('/dashboard');
+    props.history.push('/studentdashboard');
   }
+
+  // const role = (props)  => {
+  //   // const isLoggedIn = props.isLoggedIn;
+  //   if (key="1") {
+  //     return <StudentDashboard />;
+  //   }
+  //   return <FacultyDashboard />;
+  // }
     
     return(
         <div>
@@ -35,6 +44,8 @@ const Login = (props) => {
           <option key="2">Faculty</option>
         </Input>
       </FormGroup>
+
+      {/* <input type="button" value={`${showTab ? 'Hide' : 'Show'} Tab`} onClick={handleToggle}></input> */}
         
         <Button onClick={onClickHandler}>Submit</Button> &nbsp;
         <Button>Forgot Password</Button> &nbsp;

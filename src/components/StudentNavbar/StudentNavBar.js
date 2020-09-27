@@ -19,7 +19,7 @@ import Logo from '../Logo/Logo';
 
 //This is the navigation bar that will be visible on dashboard
 
-const NavBar = (props) => {
+const StudentNavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -89,4 +89,4 @@ const NavBar = (props) => {
   );
 }
 
-export default withRouter(NavBar);
+export default withRouter(StudentNavBar);
