@@ -4,6 +4,7 @@ import Slider from '../../components/Slider/Slider';
 import LoginModal from '../../components/LoginModal/LoginModal';
 import Logo from '../../components/Logo/Logo';
 import Footer from '../../components/Footer/Footer';
+import { Jumbotron } from 'reactstrap';
 
 const Main = () => {
 
@@ -13,8 +14,7 @@ const Main = () => {
     return (
         <div className="Main">
             <Logo/>
-            <h1> Jagan Institute Of Management Studies </h1>
-            <h2> Pre - Placement Portal </h2>
+            <Jumbotron/>
             <br/>
            
             <LoginModal/>
