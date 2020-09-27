@@ -15,8 +15,8 @@ const Main = () => {
         <div className="Main">
             <Logo/>
             <p>
-            <h1>Jagan Institute of Management Studies</h1>
-            <h2>Pre-placement Portal</h2>
+            <h1 style= {{color: "Maroon"},{fontFamily: "Times Now Roman"}, {fontSize: "400%"}}> Jagan Institute of Management Studies</h1>
+            <h2 style= {{color: "Black"},{fontFamily: "Algeria"}, {fontSize: "200%"}}>Pre-placement Portal</h2>
             </p>
             <br/>
             <LoginModal/>
