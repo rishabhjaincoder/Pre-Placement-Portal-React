@@ -1,5 +1,6 @@
 .footer {
-    background-color: rgb(238, 229, 229);
+    background-color: black;
+    color: white;
 }
 
 .social-container {
@@ -27,5 +28,5 @@ a.social {
   }
   
   a.instagram {
-    color: black;
+    color: rgb(215, 208, 218);
   }

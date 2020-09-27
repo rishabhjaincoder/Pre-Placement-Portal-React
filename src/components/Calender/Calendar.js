@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Calendar.css';
 import Calendar from 'react-calendar';
  
 class MyApp extends Component {
@@ -6,12 +7,13 @@ class MyApp extends Component {
     date: new Date(),
   }
  
-  onChange = date => this.setState({ date })
+  onChange = date => this.setState({ date });
  
   render() {
     return (
       <div>
         <Calendar
+          className="calendar"
           onChange={this.onChange}
           value={this.state.date}
         />
@@ -19,3 +21,5 @@ class MyApp extends Component {
     );
   }
 }
+
+export default MyApp;
