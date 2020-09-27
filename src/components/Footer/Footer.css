@@ -28,5 +28,10 @@ a.social {
   }
   
   a.instagram {
-    color: rgb(215, 208, 218);
+    color: black;
+  }
+
+  .footer-copyright{
+    align-content: center;
+    display: inline-block;
   }

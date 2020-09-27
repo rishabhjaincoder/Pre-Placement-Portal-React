@@ -44,7 +44,7 @@ const FooterPage = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          Copyright &copy; {new Date().getFullYear()} All Rights Reserved with JIMS
+                  Copyright &copy; {new Date().getFullYear()} All Rights Reserved with JIMS
         </MDBContainer>
       </div>
     </MDBFooter>

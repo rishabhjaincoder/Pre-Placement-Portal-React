@@ -6,28 +6,28 @@ import './Slider.css';
 
 const items = [
   {
-    src: require('../../assets/Image1.jpg'),
+    src: require('../../assets/slide1.jpg'),
     altText: "Slide 1",
     caption: "",
     header: "",
     key: "1",
   },
   {
-    src: require('../../assets/Image2.jpg'),
+    src: require('../../assets/slide2.jpg'),
     altText: "Slide 2",
     caption: "",
     header: "",
     key: "2",
   },
   {
-    src: require('../../assets/Image3.png'),
+    src: require('../../assets/slide1.jpg'),
     altText: "Slide 3",
     caption: "",
     header: "",
     key: "3",
   },
   {
-    src: require('../../assets/Image4.png'),
+    src: require('../../assets/slide2.jpg'),
     altText: "Slide 4",
     caption: "",
     header: "",
