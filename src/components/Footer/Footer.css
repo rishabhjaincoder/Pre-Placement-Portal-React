@@ -29,3 +29,8 @@ a.social {
   a.instagram {
     color: black;
   }
+
+  .footer-copyright{
+    align-content: center;
+    display: inline-block;
+  }

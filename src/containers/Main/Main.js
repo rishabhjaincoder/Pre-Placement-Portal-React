@@ -15,10 +15,9 @@ const Main = () => {
         <div className="Main">
             <Logo/>
             <p>
-            <h1 style= {{color: "Maroon"},{fontFamily: "Times Now Roman"}, {fontSize: "400%"}}> Jagan Institute of Management Studies</h1>
-            <h2 style= {{color: "Black"},{fontFamily: "Algeria"}, {fontSize: "200%"}}>Pre-placement Portal</h2>
+            <b><h1 style= {{fontFamily: "Berlin sans FB"}, {fontSize: "300%"}, {fontWeight: "bold"}}> Jagan Institute of Management Studies</h1></b>
+            <h2 style= {{fontFamily: "Verdana"}}>Pre-placement Portal</h2>
             </p>
-            <br/>
             <LoginModal/>
             <Slider/>
             <Footer/>
