@@ -16,19 +16,17 @@ const Main = () => {
             <Logo/>
             <p align="center">
             <b>
-                <h1 style= {{
+            <h1 style= {{
                         fontFamily: "Berlin sans FB", 
                         fontSize: "300%", 
                         fontWeight: "bold"
-                        }}
-                >
-                Jagan Institute of Management Studies</h1></b>
-            <h2 style= {{fontFamily: "Verdana"}}>Pre-placement Portal</h2>
+                        }}> Jagan Institute of Management Studies </h1></b>
+            <h2 style= {{fontFamily: "Verdana"}}>Pre-placement Portal</h2> 
             </p>
-            
-                <div align="right">
-                    <LoginModal/>
-                </div>
+
+            <div classname="button" align="right" >
+                <LoginModal/>
+             </div>
             
             <Slider/>
             <Footer/>
