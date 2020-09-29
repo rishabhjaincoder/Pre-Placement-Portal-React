@@ -20,8 +20,10 @@ const Main = () => {
                         fontFamily: "Berlin sans FB", 
                         fontSize: "300%", 
                         fontWeight: "bold"
-                        }}> Jagan Institute of Management Studies </h1></b>
-            <h2 style= {{fontFamily: "Verdana"}}>Pre-placement Portal</h2> 
+                        }}> Jagan Institute of Management Studies </h1>
+            <h2 style= {{fontFamily: "initial",
+                        fontWeight: "bold"
+                        }}> Pre-Placement Portal </h2> </b>
             </p>
 
             <div classname="button" align="right" >
