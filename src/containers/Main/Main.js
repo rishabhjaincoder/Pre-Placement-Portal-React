@@ -16,6 +16,7 @@ const Main = () => {
             <Logo/>
           
             <b>
+            <div align="center">
             <h1 style= {{
                         fontFamily: "Poppins", 
                         fontSize: "300%", 
@@ -24,8 +25,9 @@ const Main = () => {
             <h3 style={{fontSize: "100%"}}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
             <h2 style= {{fontFamily: "initial",
                         fontWeight: "bold"
-                        }}> Pre-Placement Portal </h2> </b>
-          
+                        }}> Pre-Placement Portal </h2> 
+            </div>
+            </b>
 
             <div className="button" align="right" >
                 <LoginModal/>
