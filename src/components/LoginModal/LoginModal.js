@@ -20,7 +20,7 @@ const LoginModal = (props) => {
     // style={{position= "absolute", margin-left="91%", top= 68px}}
 
     <div className= "button" style={{position: 'absolute', marginLeft: '90%', top: '80px', fontSize: "20px", borderRadius: "12px"}}>
-      <Button outline color="danger" onClick={toggle}> Login </Button>{''}
+      <Button outline color="danger" onClick={toggle}><span> Login </span></Button>{''}
       <Modal isOpen={modal} toggle={toggle} className={className} external={externalCloseBtn}>
         <Login/>
       </Modal>
