@@ -14,7 +14,6 @@ const Main = () => {
     return (
         <div className="Main">
             <Logo/>
-          
             <b>
             <div align="center">
             <h1 style= {{
@@ -22,7 +21,7 @@ const Main = () => {
                         fontSize: "300%", 
                         fontWeight: "bold"
                         }}> Jagan Institute of Management Studies </h1>
-            <h3 style={{fontSize: "100%"}}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
+            <h3 style={{fontSize: "120%"}}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
             <h2 style= {{fontFamily: "initial",
                         fontWeight: "bold"
                         }}> Pre-Placement Portal </h2> 
