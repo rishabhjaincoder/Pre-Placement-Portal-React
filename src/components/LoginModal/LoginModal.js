@@ -16,8 +16,11 @@ const LoginModal = (props) => {
 
   const externalCloseBtn = <button className="close" style={{ position: 'absolute', top: '15px', right: '15px'}} onClick={toggle}>&times; </button>;
   return (
-    <div className= "button">
-      <Button color="danger" onClick={toggle}>LOGIN</Button>
+
+    // style={{position= "absolute", margin-left="91%", top= 68px}}
+
+    <div className= "button" style={{position: 'absolute', marginLeft: '91%', top: '68px' }}>
+      <Button outline color="secondary"onClick={toggle}>LOGIN</Button>{''}
       <Modal isOpen={modal} toggle={toggle} className={className} external={externalCloseBtn}>
         <Login/>
       </Modal>

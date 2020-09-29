@@ -7,7 +7,7 @@ import './Logo.css';
 const Logo = () => {
     return (
         <div>
-            <img className="logo" src={logo} height="150" alt="Jims Logo" align="left"  />
+            <img className="logo" src={logo} height="120" alt="Jims Logo" align="left"  />
         </div>
     );
 }
