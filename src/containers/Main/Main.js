@@ -14,7 +14,7 @@ const Main = () => {
     return (
         <div className="Main">
             <Logo/>
-            <p align="center">
+          
             <b>
             <h1 style= {{
                         fontFamily: "Poppins", 
@@ -25,9 +25,9 @@ const Main = () => {
             <h2 style= {{fontFamily: "initial",
                         fontWeight: "bold"
                         }}> Pre-Placement Portal </h2> </b>
-            </p>
+          
 
-            <div classname="button" align="right" >
+            <div className="button" align="right" >
                 <LoginModal/>
              </div>
             
