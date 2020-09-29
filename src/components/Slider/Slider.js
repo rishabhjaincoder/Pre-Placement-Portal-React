@@ -20,14 +20,14 @@ const items = [
     key: "2",
   },
   {
-    src: require('../../assets/slide1.jpg'),
+    src: require('../../assets/slide3.jpg'),
     altText: "Slide 3",
     caption: "",
     header: "",
     key: "3",
   },
   {
-    src: require('../../assets/slide2.jpg'),
+    src: require('../../assets/slide4.jpg'),
     altText: "Slide 4",
     caption: "",
     header: "",
