@@ -1,6 +1,6 @@
 import React from 'react';
 import './StudentDashboard.css';
-import RegisterModal from '../../components/RegisterModal/RegisterModal';
+
 import StudentNavBar from '../../components/StudentNavbar/StudentNavBar';
 import Footer from '../../components/Footer/Footer';
 import AddNote from '../../components/AddNote/AddNote';
@@ -10,28 +10,31 @@ const StudentDashboard = (props) => {
     return (
         <div>
             <StudentNavBar/>
-
             <br/>
-
-            <div align="right">
-                <RegisterModal/> 
+            <div className="functions"> 
+                <button className="functionButtons">RESUME BUILDER</button> <br/><br/>
+                <button className="functionButtons">VIEW PROGRESS REPORT</button> <br/><br/>
+                <button className="functionButtons">VIEW TEST SCHEDULE</button> <br/><br/>
+                <button className="functionButtons">VIEW NEW JOB/POSTINGS</button> <br/><br/>
+                <button className="functionButtons">VIEW FEEDBACK</button> 
             </div>
-
-            <br/><br/>
-
-            <div className="schedule" align="right">
-                SCHEDULES
+            <div className="schedule" align="center">
+                SCHEDULES <br/>
             </div>
-
+            <div className="notices" align="center">
+                    NOTICE 1 <br/>
+                    NOTICE 2 <br/>
+                    NOTICE 3 <br/>
+                    NOTICE 4 <br/>
+                    NOTICE 5 <br/>
+                    NOTICE 6 <br/>
+                    NOTICE 7 <br/>
+                    NOTICE 8 <br/>    
+            </div>
             <br/>
-
-            <div className="notices">
-                <p align="right">NOTICES</p>
-                <Calendar/>
-            </div>
-
+            <Calendar/>
             <AddNote/>
-            
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <Footer/>
         </div>
     );
