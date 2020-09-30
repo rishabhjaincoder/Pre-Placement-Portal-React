@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './StudentNavBar.css';
+
 import {
   Collapse,
   Navbar,
@@ -12,10 +14,8 @@ import {
   DropdownItem,
   Button
 } from 'reactstrap';
-
 import {withRouter} from 'react-router-dom';
 import Logo from '../Logo/Logo';
-// import {NavLink} from 'react-router-dom';
 
 //This is the navigation bar that will be visible on dashboard
 
@@ -25,11 +25,11 @@ const StudentNavBar = (props) => {
     const toggle = () => setIsOpen(!isOpen);
 
     const onClickHandler = () => {
-        props.history.push('/studenteditprofile');
+      props.history.push('/studenteditprofile');
     }
 
     const onLogoutHandler = () => {
-        props.history.push('/');
+      props.history.push('/');
     }
 
     return (
@@ -40,7 +40,6 @@ const StudentNavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              {/* <NavLink href="/components/">Components</NavLink> */}
               <NavLink href="/about"> About </NavLink>
             </NavItem>
             &nbsp; &nbsp; &nbsp;

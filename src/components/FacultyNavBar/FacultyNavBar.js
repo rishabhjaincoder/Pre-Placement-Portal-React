@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
+import './FacultyNavBar.css';
+
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
+  Collapse, 
+  Navbar, 
+  NavbarToggler, 
+  Nav, 
+  NavItem, 
+  NavLink, 
+  UncontrolledDropdown, 
+  DropdownToggle, 
   DropdownMenu,
   DropdownItem,
   Button
 } from 'reactstrap';
-
 import {withRouter} from 'react-router-dom';
 import Logo from '../Logo/Logo';
-// import {NavLink} from 'react-router-dom';
 
 //This is the navigation bar that will be visible on dashboard
 
@@ -40,7 +40,6 @@ const FacultyNavBar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              {/* <NavLink href="/components/">Components</NavLink> */}
               <NavLink href="/about">About</NavLink>
             </NavItem>
             &nbsp; &nbsp; &nbsp;
