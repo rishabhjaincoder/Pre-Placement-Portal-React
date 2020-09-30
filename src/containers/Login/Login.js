@@ -18,6 +18,14 @@ const Login = (props) => {
     props.history.push('/studentdashboard');
   }
 
+  const student = () => {
+    props.history.push('/studentdashboard');
+  } 
+
+  const faculty = () => {
+    props.history.push('/facultydashboard');
+  }
+
   // const role = (props)  => {
   //   // const isLoggedIn = props.isLoggedIn;
   //   if (key="1") {
@@ -49,8 +57,8 @@ const Login = (props) => {
       {<input type="button" value={`${showTab ? 'Hide' : 'Show'} Tab`} onClick={handleToggle}></input> */}
         
 
-      <Button className='std' color= "success" onClick={onClickHandler}> Student </Button> 
-      <Button className='fct' color= "info" onClick={onClickHandler}> Faculty </Button> 
+      <Button className='std' color= "success" onClick={student}> Student </Button> 
+      <Button className='fct' color= "info" onClick={faculty}> Faculty </Button> 
       <Button color="secondary" className=" btn-block" onClick={onClickHandler}> Submit </Button> &nbsp;
       <Button color="danger" className="btn-block" onClick={onClickHandler}> Cancel </Button> &nbsp;
         
