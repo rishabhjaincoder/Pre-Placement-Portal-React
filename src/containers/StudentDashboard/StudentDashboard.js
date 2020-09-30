@@ -12,11 +12,16 @@ const StudentDashboard = (props) => {
             <StudentNavBar/>
             <br/>
             <div className="functions"> 
-                <button className="functionButtons">RESUME BUILDER</button> <br/><br/>
-                <button className="functionButtons">VIEW PROGRESS REPORT</button> <br/><br/>
-                <button className="functionButtons">VIEW TEST SCHEDULE</button> <br/><br/>
-                <button className="functionButtons">VIEW NEW JOB/POSTINGS</button> <br/><br/>
+                <button className="functionButtons">RESUME BUILDER</button>
+                <hr/>
+                <button className="functionButtons">VIEW PROGRESS REPORT</button>
+                <hr/>
+                <button className="functionButtons">VIEW TEST SCHEDULE</button>
+                <hr/>
+                <button className="functionButtons">VIEW NEW JOB/POSTINGS</button> 
+                <hr/>
                 <button className="functionButtons">VIEW FEEDBACK</button> 
+                <hr/>
             </div>
             <div className="schedule" align="center">
                 SCHEDULES <br/>
@@ -34,7 +39,7 @@ const StudentDashboard = (props) => {
             <br/>
             <Calendar/>
             <AddNote/>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <Footer/>
         </div>
     );

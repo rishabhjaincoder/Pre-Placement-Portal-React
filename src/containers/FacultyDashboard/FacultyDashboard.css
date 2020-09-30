@@ -8,22 +8,6 @@
 }
 
 .notices{
-    top: 270px;
-    width:250px; 
-    right:10px; 
-    bottom: 300px;
-    border-style: solid;
-    position:absolute;
-} */.schedule {
-    top: 180px;
-    width:250px; 
-    right:10px; 
-    bottom: 500px;
-    border-style: solid;
-    position:absolute;
-}
-
-.notices{
     top: 280px;
     width: 250px; 
     right: 10px; 
@@ -41,7 +25,7 @@
 }
 
 .functionButtons {
-        background-color: #4CAF50;
+        background-color: rgb(8, 62, 124);
         font-size: 20px;
         border: none;
         color: white;
@@ -54,3 +38,7 @@
      
 }
 
+
+.functionButtons:hover {
+    opacity: 7
+} */
