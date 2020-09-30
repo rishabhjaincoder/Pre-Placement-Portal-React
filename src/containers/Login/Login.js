@@ -25,10 +25,8 @@ const Login = (props) => {
   //   }
   //   return <FacultyDashboard />;
   // }
-
     
     return(
-
         <div>
         <Form className="login-form" autoComplete="off">
           <h2 className="text-center"> <b> Login </b></h2>
@@ -40,28 +38,30 @@ const Login = (props) => {
           <Label for="Password">Password </Label>
           <Input type="password" name="password" id="Password" value={password} placeholder="Enter Password" onChange={e => setPassword(e.target.value)} />
         </FormGroup>
-        <FormGroup>
+
+       {/*<FormGroup>
         <Label for="role">I am a </Label>
-        <Input type="select" name="role" id="role" >
-          <option value="1">Student</option>
-          <option value="2">Faculty</option>
+        <Input type="select" name="role" id="role">
+          <option key="1">Student</option>
+          <option key="2">Faculty</option>
         </Input>
-      </FormGroup>
-      {/* <input type="button" value={`${showTab ? 'Hide' : 'Show'} Tab`} onClick={handleToggle}></input> */}
+      </FormGroup>}
+      {<input type="button" value={`${showTab ? 'Hide' : 'Show'} Tab`} onClick={handleToggle}></input> */}
         
-      <Button color="secondary" className="btn-lg btn-block" onClick={onClickHandler}> Submit </Button> &nbsp;
-        <div className="inline">
-          <Button color="danger" className="text-left" onClick={onClickHandler}> Cancel </Button> &nbsp;
-          <div className= "text-right">
-            <a href="/sign-up"> Forgot the password? </a>
-          </div>
-        </div>
+
+      <Button className='std' color= "success" onClick={onClickHandler}> Student </Button> 
+      <Button className='fct' color= "info" onClick={onClickHandler}> Faculty </Button> 
+      <Button color="secondary" className=" btn-block" onClick={onClickHandler}> Submit </Button> &nbsp;
+      <Button color="danger" className="btn-block" onClick={onClickHandler}> Cancel </Button> &nbsp;
+        
+      {/*<div className= "text-right">
+          <a href="/sign-up"> Forgot the password? </a>
+    </div>*/}
+    
+      
       </Form>
       </div>
     );
-    
 }
-
-   
 
 export default withRouter(Login);
