@@ -29,7 +29,7 @@ const Login = (props) => {
     return(
         <div>
         <Form className="login-form" autoComplete="off">
-        <FormGroup>
+        <FormGroup >
           <Label for="Email">Email </Label>
           <Input type="email" name="email" id="Email" value={email} placeholder="Enter Email" onChange={e => setEmail(e.target.value)}/>
         </FormGroup>
@@ -43,13 +43,13 @@ const Login = (props) => {
           <option key="1">Student</option>
           <option key="2">Faculty</option>
         </Input>
+         
       </FormGroup>
 
       {/* <input type="button" value={`${showTab ? 'Hide' : 'Show'} Tab`} onClick={handleToggle}></input> */}
         
         <Button onClick={onClickHandler}>Submit</Button> &nbsp;
         <Button>Forgot Password</Button> &nbsp;
-        <Button>Sign Up</Button>
       </Form>
       </div>
     );
