@@ -19,7 +19,8 @@ const Main = () => {
             <h1 style= {{
                         fontFamily: "Poppins", 
                         fontSize: "300%", 
-                        fontWeight: "bold"
+                        fontWeight: "bold",
+                        color: "midnightblue"
                         }}> Jagan Institute of Management Studies </h1>
             <h3 style={{fontSize: "120%"}}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
             <h2 style= {{fontFamily: "initial",

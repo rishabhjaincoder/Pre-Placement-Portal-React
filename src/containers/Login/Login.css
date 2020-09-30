@@ -10,8 +10,21 @@
   opacity: 0.8;
 }
 
+.text-center{
+  margin-left: 120px;
+}
+
 .inline{
-  margin-top: -30px;
+  margin-top: -20px;
+}
+
+.fct{
+  margin-left: 55%;
+  margin-top: -67px;
+}
+
+.std{
+  margin-left: 100px;
 }
 
 .text-left{
@@ -20,4 +33,9 @@
 
 .text-right{
   margin-top: -29px;
+}
+
+.btn-block+.btn-block {
+  margin-top: -4px;
+  margin-bottom: -34px;
 }

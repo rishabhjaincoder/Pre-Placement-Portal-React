@@ -41,15 +41,15 @@ const StudentNavBar = (props) => {
           <Nav className="mr-auto" navbar>
             <NavItem>
               {/* <NavLink href="/components/">Components</NavLink> */}
-              <NavLink href="/about">About</NavLink>
+              <NavLink href="/about"> About </NavLink>
             </NavItem>
             &nbsp; &nbsp; &nbsp;
             <NavItem>
-              <NavLink href="/contact">Contact</NavLink>
+              <NavLink href="/contact"> Contact </NavLink>
             </NavItem>
             &nbsp; &nbsp; &nbsp;
             <NavItem>
-              <NavLink href="/about">View test score</NavLink>
+              <NavLink href="/about"> View test score </NavLink>
             </NavItem>
             &nbsp; &nbsp; &nbsp;
             <UncontrolledDropdown nav inNavbar>
