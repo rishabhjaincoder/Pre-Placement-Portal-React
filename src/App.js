@@ -4,7 +4,8 @@ import './App.css';
 import StudentLogin from './containers/StudentLogin/StudentLogin';
 import StudentDashboard from './containers/StudentDashboard/StudentDashboard';
 import FacultyDashboard from './containers/FacultyDashboard/FacultyDashboard';
-import EditProfile from './containers/EditProfile/EditProfile';
+import StudentEditProfile from './containers/StudentEditProfile/StudentEditProfile';
+import FacultyEditProfile from './containers/FacultyEditProfile/FacultyEditProfile';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Main from './containers/Main/Main';
@@ -20,7 +21,8 @@ const app = () => {
       <Route path="/facultydashboard" component={FacultyDashboard} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
-      <Route path="/editprofile" component={EditProfile} />
+      <Route path="/studenteditprofile" component={StudentEditProfile} />
+      <Route path="/facultyeditprofile" component={FacultyEditProfile} />
       <Redirect to="/"/>
     </Switch>
   );

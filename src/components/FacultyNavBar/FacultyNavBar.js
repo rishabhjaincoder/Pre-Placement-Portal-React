@@ -25,7 +25,7 @@ const FacultyNavBar = (props) => {
     const toggle = () => setIsOpen(!isOpen);
 
     const onClickHandler = () => {
-        props.history.push('/editprofile');
+        props.history.push('/facultyeditprofile');
     }
 
     const onLogoutHandler = () => {

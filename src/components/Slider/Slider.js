@@ -44,13 +44,9 @@ const items = [
 
 const Slider = () => (
 
-  // <Row>
-  //   <Col md="6" className="mx-auto">
   <div className="slider">  
     <UncontrolledCarousel items={items} />  
   </div>    
-  //   </Col>
-  // </Row>
 );
 
 export default Slider;

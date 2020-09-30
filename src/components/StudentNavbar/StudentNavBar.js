@@ -25,7 +25,7 @@ const StudentNavBar = (props) => {
     const toggle = () => setIsOpen(!isOpen);
 
     const onClickHandler = () => {
-        props.history.push('/editprofile');
+        props.history.push('/studenteditprofile');
     }
 
     const onLogoutHandler = () => {
