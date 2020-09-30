@@ -1,22 +1,23 @@
 .login-form {
-    background-color: whitesmoke;
-    width: 100%;
-    font-size: 20px;
-    /* max-width: 330px; */
-    padding: 70px;
-    margin: auto;
-    height: 80%;
+  background-color: white;
+  padding: 40px;
+  margin-top: -64px;
+  margin: 8px;
+  padding-top: 1pc;
 }
-/* .login-form{
-width: 700px;
-  height: 400px;
-  margin: 90px auto;
-  margin-top: -140px;
-  padding: 65px;
-  color: white;
-  padding-block-start: 100px;
-  position: relative;
-  border-style: 3px solid #f1f1f1;
-  opacity: 0.9;
-  border-radius: 20px;
-} */
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.inline{
+  margin-top: -30px;
+}
+
+.text-left{
+  margin-top: 20px;
+}
+
+.text-right{
+  margin-top: -29px;
+}
