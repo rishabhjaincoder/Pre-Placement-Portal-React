@@ -6,6 +6,12 @@ import Login from '../../containers/Login/Login';
 //This the modal that will be visible on the main page for login
 
 const LoginModal = (props) => {
+
+  // const [showModal, setShow] = useState(false);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
   const {
     className
   } = props;

@@ -6,6 +6,13 @@ import StudentLogin from '../../containers/StudentLogin/StudentLogin';
 //This is the modal that will be available on dashboard for registration
 
 const RegisterModal = (props) => {
+
+ // const [showModal, setShow] = useState(false);
+
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+
+
   const {
     className
   } = props;
