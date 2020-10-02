@@ -4,7 +4,7 @@ import Slider from '../../components/Slider/Slider';
 import LoginModal from '../../components/LoginModal/LoginModal';
 import Logo from '../../components/Logo/Logo';
 import Footer from '../../components/Footer/Footer';
-
+import GalleryLogo from '../../components/GalleryLogo/GalleryLogo';
 
 const Main = () => {
             
@@ -31,7 +31,7 @@ const Main = () => {
             </b>
 
 
-            <div className="button" align="right" >
+            <div className="button" align="right" > 
                 <LoginModal/>                                                                                   {/*About Login Button */}
              </div>
             
@@ -39,11 +39,12 @@ const Main = () => {
 
             <div className='acc' align='center'>
                 <h2 style ={{fontFamily: "initial",
-                            fontWeight: 'bold'}}> ACCREDITATION AND APPROVALS </h2>                                
-                
-                </div>        
+                            fontWeight: 'bold'}}> ACCREDITATION AND APPROVALS </h2>                                {/* College info */}
+                <GalleryLogo/>
+            </div>  
+               
             <Footer/>                                                                                            {/* For access the footer file*/}
-        </div>
+        </div> 
     );
 }
 

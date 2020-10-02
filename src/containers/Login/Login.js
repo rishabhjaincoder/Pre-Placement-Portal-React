@@ -60,7 +60,7 @@ const Login = (props) => {
       <Button className='std' color= "success" onClick={student}> Student </Button> 
       <Button className='fct' color= "info" onClick={faculty}> Faculty </Button> 
       <Button color="secondary" className=" btn-block" onClick={onClickHandler}> Submit </Button> &nbsp;
-      <Button color="danger" className="btn-block" onClick={onClickHandler}> Cancel </Button> &nbsp;
+      <Button color="danger" className="btn-block" onClick={oncancel}> Cancel </Button> &nbsp;
         
       {/*<div className= "text-right">
           <a href="/sign-up"> Forgot the password? </a>
