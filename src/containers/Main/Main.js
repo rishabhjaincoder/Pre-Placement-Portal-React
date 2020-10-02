@@ -33,8 +33,8 @@ const Main = () => {
                 <LoginModal/>
              </div>
             
-            <Slider/>
-            <Footer/>
+            <Slider/>               {/* For access the slider */}            
+            <Footer/>               {/* For access the footer file*/}
         </div>
     );
 }
