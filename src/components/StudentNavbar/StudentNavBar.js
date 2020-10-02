@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './StudentNavBar.css';
-
 import {
   Collapse,
   Navbar,
@@ -12,8 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Button
-} from 'reactstrap';
+  Button} from 'reactstrap';
 import {withRouter} from 'react-router-dom';
 import Logo from '../Logo/Logo';
 
@@ -22,67 +20,73 @@ import Logo from '../Logo/Logo';
 const StudentNavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => setIsOpen(!isOpen);
+const toggle = () => setIsOpen(!isOpen);
 
-    const onClickHandler = () => {
-      props.history.push('/studenteditprofile');
-    }
+const onClickHandler = () => {
+    props.history.push('/studenteditprofile');
+  }
 
-    const onLogoutHandler = () => {
-      props.history.push('/');
-    }
+const onLogoutHandler = () => {
+    props.history.push('/');
+  }
 
-    return (
-    <div>
-      <Navbar color="light" light expand="md">
+  return (
+    <div className="btn-black">
+      <Navbar light expand="md">
         <a href="/"><Logo/></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/about"> About </NavLink>
-            </NavItem>
-            &nbsp; &nbsp; &nbsp;
-            <NavItem>
-              <NavLink href="/contact"> Contact </NavLink>
-            </NavItem>
-            &nbsp; &nbsp; &nbsp;
-            <NavItem>
-              <NavLink href="/about"> View test score </NavLink>
-            </NavItem>
-            &nbsp; &nbsp; &nbsp;
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                View Resources
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  View test papers
-                </DropdownItem>
-                <DropdownItem>
-                  View assignments
-                </DropdownItem>
-                <DropdownItem NavLink to="/ppt-section">
-                  View PPTs
-                </DropdownItem>
-                <DropdownItem>
-                  View announcements
-                </DropdownItem>
-                <DropdownItem>
-                  View videos
-                </DropdownItem>
-                <DropdownItem>
-                  View weblinks/external resources
-                </DropdownItem>
-                <DropdownItem>
-                  View notes
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <Button onClick={onClickHandler}>EDIT PROFILE</Button> &nbsp;
-          <Button onClick={onLogoutHandler}> LOGOUT</Button>
-        </Collapse>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+          
+      <Nav className="mr-auto" navbar>
+        <NavItem>
+          <NavLink href="/about"> About </NavLink>
+        </NavItem>
+          &nbsp; &nbsp; &nbsp;
+        <NavItem>
+          <NavLink href="/contact"> Contact </NavLink>
+        </NavItem>
+          &nbsp; &nbsp; &nbsp;
+        <NavItem>
+          <NavLink href="/about"> View test score </NavLink>
+        </NavItem>
+          &nbsp; &nbsp; &nbsp;
+        
+        <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav caret>
+            View Resources
+          </DropdownToggle>
+        <DropdownMenu right>
+            <DropdownItem>
+                View test papers
+            </DropdownItem>
+            <DropdownItem>
+                View assignments
+            </DropdownItem>
+            <DropdownItem NavLink to="/ppt-section">
+                View PPTs
+            </DropdownItem>
+            <DropdownItem>
+                View announcements
+            </DropdownItem>
+            <DropdownItem>
+                View videos
+            </DropdownItem>
+            <DropdownItem>
+                View weblinks/external resources
+            </DropdownItem>
+            <DropdownItem>
+              View notes
+            </DropdownItem>
+        </DropdownMenu>
+        </UncontrolledDropdown>
+      </Nav>
+         
+      <div className="btn">
+      <Button color="success" onClick={onClickHandler}> Edit Profile </Button> &nbsp;
+      <Button color="danger" onClick={onLogoutHandler}> Logout </Button>
+      </div>
+      
+      </Collapse>
       </Navbar>
     </div>
   );

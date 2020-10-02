@@ -1,7 +1,7 @@
 import React from 'react';
 import './FacultyDashboard.css';
 import FacultyNavBar from '../../components/FacultyNavBar/FacultyNavBar';
-import AddNewResModal from '../../components/AddNewResModal/AddNewResModal';
+//import AddNewResModal from '../../components/AddNewResModal/AddNewResModal';
 import Footer from '../../components/Footer/Footer';
 import AddNote from '../../components/AddNote/AddNote';
 import Calendar from '../../components/Calender/Calendar';
