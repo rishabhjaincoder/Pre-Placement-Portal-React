@@ -21,13 +21,15 @@ const Main = () => {
                         }}> Jagan Institute of Management Studies </h1>
             
             <h3 style={{fontSize: "120%"}}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
+            </div>
             
-            
+            <div className= 'center' style={{marginLeft: '640px'}}>                                         {/* Heading margin */}
             <h2 style= {{fontFamily: "initial",
-                        fontWeight: "bold"}}> Pre-Placement Portal </h2> 
-            
+                        fontWeight: "bold",
+                        }}> Pre-Placement Portal </h2> 
             </div>
             </b>
+
 
             <div className="button" align="right" >
                 <LoginModal/>                                                                                   {/*About Login Button */}
