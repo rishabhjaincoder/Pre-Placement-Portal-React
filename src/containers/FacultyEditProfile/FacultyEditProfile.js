@@ -37,13 +37,12 @@ const FacultyEditProfile = (props) => {
           })
             .then(response => response.json())
             .then((result) => {
-              props.history.push('/studentdashboard');
+              props.history.push('/facultydashboard');
               console.log(result);
             })
             .catch((err) => {
               console.log(err);
             });
-        props.history.push('/facultydashboard');
     }
 
     return (
