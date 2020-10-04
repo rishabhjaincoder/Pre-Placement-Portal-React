@@ -6,12 +6,13 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   Button} from 'reactstrap';
-import {withRouter, NavLink} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import Logo from '../Logo/Logo';
 
 //This is the navigation bar that will be visible on dashboard
@@ -38,15 +39,15 @@ const onLogoutHandler = () => {
           
       <Nav className="mr-auto" navbar>
         <NavItem>
-          <NavLink to="/about"> About </NavLink>
+          <NavLink href="/about"> About </NavLink>
         </NavItem>
           &nbsp; &nbsp; &nbsp;
         <NavItem>
-          <NavLink to="/contact"> Contact </NavLink>
+          <NavLink href="/contact"> Contact </NavLink>
         </NavItem>
           &nbsp; &nbsp; &nbsp;
         <NavItem>
-          <NavLink to="/about"> View test score </NavLink>
+          <NavLink href="/about"> View test score </NavLink>
         </NavItem>
           &nbsp; &nbsp; &nbsp;
         
