@@ -19,6 +19,30 @@ const FacultyEditProfile = (props) => {
     // }
 
     const onClickHandler = () => {
+        const alteredData = {
+            firstname: firstName,
+            lastname: lastName, 
+            phone: phone,
+            address: address,
+            dob: dob
+          }
+      
+          fetch('http://localhost:4000/user/updateprofile/', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            credentials: 'include',
+            body: JSON.stringify( alteredData ),
+          })
+            .then(response => response.json())
+            .then((result) => {
+              props.history.push('/studentdashboard');
+              console.log(result);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
         props.history.push('/facultydashboard');
     }
 

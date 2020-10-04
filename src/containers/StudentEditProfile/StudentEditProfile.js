@@ -26,7 +26,38 @@ const StudentEditProfile = (props) => {
     // }
 
     const onClickHandler = () => {
-        props.history.push('/studentdashboard');
+        const alteredData = {
+            firstname: firstName,
+            lastname: lastName,
+            course: course,
+            semester: semester,
+            phone: phone,
+            address: address,
+            dob: dob,
+            motherName: motherName,
+            fatherName: fatherName,
+            percentage: percentage,
+            projectTitle: projectTitle,
+            techUsed: techUsed
+          }
+      
+          fetch('http://localhost:4000/user/updateprofile/', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            credentials: 'include',
+            body: JSON.stringify( alteredData ),
+          })
+            .then(response => response.json())
+            .then((result) => {
+              props.history.push('/studentdashboard');
+              console.log(result);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        //props.history.push('/studentdashboard');
     }
 
     return (

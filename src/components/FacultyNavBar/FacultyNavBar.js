@@ -29,7 +29,19 @@ const FacultyNavBar = (props) => {
     }
 
     const onLogoutHandler = () => {
-        props.history.push('/');
+      fetch('http://localhost:4000/user/logout', {
+        method: 'GET',
+        credentials: 'include',
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          props.history.push('/');
+          console.log(result);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+        // props.history.push('/');
     }
 
     return (

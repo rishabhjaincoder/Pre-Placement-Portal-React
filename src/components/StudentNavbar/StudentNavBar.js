@@ -20,14 +20,26 @@ import Logo from '../Logo/Logo';
 const StudentNavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
-const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen);
 
-const onClickHandler = () => {
+  const onClickHandler = () => {
     props.history.push('/studenteditprofile');
   }
 
-const onLogoutHandler = () => {
-    props.history.push('/');
+  const onLogoutHandler = () => {
+    fetch('http://localhost:4000/user/logout', {
+          method: 'GET',
+          credentials: 'include',
+        })
+          .then((response) => response.json())
+          .then((result) => {
+            props.history.push('/');
+            console.log(result);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+    // props.history.push('/');
   }
 
   return (
