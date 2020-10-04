@@ -15,7 +15,30 @@ const Login = (props) => {
   // }
 
   const onClickHandler = () => {
-    props.history.push('/studentdashboard');
+
+    const AuthData = {
+      email: email, 
+      password: password
+    }
+
+    fetch('http://localhost:4000/user/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      credentials: 'include',
+      body: JSON.stringify( AuthData ),
+    })
+      .then(response => response.json())
+      .then((result) => {
+        props.history.push('/studentdashboard');
+        console.log(result);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    // props.history.push('/studentdashboard');
   }
 
   const student = () => {
