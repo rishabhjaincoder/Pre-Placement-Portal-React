@@ -8,6 +8,7 @@ const StudentLogin = (props) => {
     const [confirm, setConfirm] = useState("");
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
+    const [phone, setPhone] = useState("");
 
     // const validateForm = () => {
     //     return (firstName.length >0 && 
@@ -38,7 +39,7 @@ const StudentLogin = (props) => {
             </FormGroup>
             <FormGroup>
                 <Label for="phone">Phone Number </Label>
-            <Input type="text" name="phone" id="phone" placeholder="Enter Phone Number" />
+            <Input type="text" name="phone" id="phone" value={phone} placeholder="Enter Phone Number" onChange={e => setPhone(e.target.value)}/>
             </FormGroup>
        
             </Form>

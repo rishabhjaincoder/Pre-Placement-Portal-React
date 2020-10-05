@@ -18,8 +18,6 @@ const GalleryLogo = () => {
             <img className="logo6" src={logo6} height='75' alt=" FICCI "/> &nbsp; &nbsp; &nbsp;  &nbsp;
             
         </div>
-    
-        
     );
 }
 

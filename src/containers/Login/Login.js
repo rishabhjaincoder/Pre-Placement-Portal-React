@@ -30,9 +30,11 @@ const Login = (props) => {
       .then((result) => {
         if(result.role === 'faculty') {
           props.history.push('/facultydashboard');
+          console.log(result);
         }
         else {
           props.history.push('/studentdashboard');
+          console.log(result);
         }
       })
       .catch((err) => {
@@ -59,12 +61,17 @@ const Login = (props) => {
       > 
         Submit 
       </Button> &nbsp;
-      <Button color="danger" className="btn-block" onClick={oncancel}> Cancel </Button> &nbsp;
+      <Button 
+        color="danger" 
+        className="btn-block" 
+        onClick={oncancel}
+      > 
+        Cancel 
+      </Button> &nbsp;
         
       {/*<div className= "text-right">
           <a href="/sign-up"> Forgot the password? </a>
-    </div>*/}
-    
+      </div>*/}
       
       </Form>
       </div>
