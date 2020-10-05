@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import StudentLogin from './containers/StudentLogin/StudentLogin';
+// import StudentLogin from './containers/StudentLogin/StudentLogin';
 import StudentDashboard from './containers/StudentDashboard/StudentDashboard';
 import FacultyDashboard from './containers/FacultyDashboard/FacultyDashboard';
 import StudentEditProfile from './containers/StudentEditProfile/StudentEditProfile';
@@ -16,7 +16,7 @@ const app = () => {
   let routes = (
     <Switch>
       <Route exact path="/" component={Main} />
-      <Route path="/studentlogin" component={StudentLogin} /> 
+      {/* <Route path="/studentlogin" component={StudentLogin} />  */}
       <Route path="/studentdashboard" component={StudentDashboard} />
       <Route path="/facultydashboard" component={FacultyDashboard} />
       <Route path="/about" component={About} />

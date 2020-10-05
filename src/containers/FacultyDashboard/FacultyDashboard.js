@@ -1,26 +1,52 @@
 import React from 'react';
 import './FacultyDashboard.css';
 import FacultyNavBar from '../../components/FacultyNavBar/FacultyNavBar';
-//import AddNewResModal from '../../components/AddNewResModal/AddNewResModal';
+import AddNewResModal from '../../components/AddNewResModal/AddNewResModal';
 import Footer from '../../components/Footer/Footer';
 import AddNote from '../../components/AddNote/AddNote';
 import Calendar from '../../components/Calender/Calendar';
 
 const FacultyDashboard = (props) => {
 
+    const onAddRes = () => {
+        console.log("add res button clicked");
+        return (<AddNewResModal/>); 
+    } 
+
+    const onAddJob = () => {
+        console.log("add job button clicked");
+        
+    } 
+
+    const onViewJob = () => {
+        console.log("view job button clicked");
+        
+    } 
+
+    const onViewProfile = () => {
+        console.log("view profile button clicked");
+        
+    } 
+
+    const onAddTest = () => {
+        console.log("add test button clicked");
+       
+    } 
+
     return (
         <div>
             <FacultyNavBar/>
             <div className="functions"> 
-                <button className="functionButtons">ADD NEW RESOURCES</button>
+                  
+                <button className="functionButtons" onClick={onAddRes}>ADD NEW RESOURCES</button>
                 <hr/>
-                <button className="functionButtons">ADD NEW JOB POSTINGS</button>
+                <button className="functionButtons" onClick={onAddJob}>ADD NEW JOB POSTINGS</button>
                 <hr/>
-                <button className="functionButtons">VIEW STUDENT PROFILE</button>
+                <button className="functionButtons" onClick={onViewJob}>VIEW NEW JOB POSTINGS</button>
                 <hr/>
-                <button className="functionButtons">VIEW NEW JOB/POSTINGS</button> 
+                <button className="functionButtons" onClick={onViewProfile}>VIEW STUDENT PROFILE</button> 
                 <hr/>
-                <button className="functionButtons">ADD NEW TEST</button> 
+                <button className="functionButtons" onClick={onAddTest}>ADD NEW TEST</button> 
                 <hr/>
             </div>
             <br/>

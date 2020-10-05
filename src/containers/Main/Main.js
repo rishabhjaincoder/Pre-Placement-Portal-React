@@ -12,7 +12,7 @@ const Main = () => {
         <div className="Main">
             <Logo/>
             <b>
-            <div align= 'center'>                                                                                   {/*Title of Website*/}
+            <div align= 'center'>                                          {/*Title of Website*/}
             <h1 style= {{
                         fontFamily: "Poppins", 
                         fontSize: "300%", 
@@ -22,28 +22,30 @@ const Main = () => {
             
             <h3 style={{fontSize: "120%"}}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
             </div>
-            
-            <div style={{marginLeft: '42%'}}>                                         {/* Heading margin */}
+
+            <div style={{marginLeft: '42%'}}>                              {/* Heading margin */}
             <h2 style= {{fontFamily: "initial",
                         fontWeight: "bold",
                         }}> Pre-Placement Portal </h2> 
             </div>
             </b>
 
-
             <div className="button" align="right" > 
-                <LoginModal/>                                                                                   {/*About Login Button */}
+                <LoginModal/>                                              {/*About Login Button */}
              </div>
             
-            <Slider/>                                                                                           {/* For access the slider */}    
+            <Slider/>                                                      {/* For access the slider */}    
 
             <div className='acc' align='center'>
                 <h2 style ={{fontFamily: "initial",
-                            fontWeight: 'bold'}}> ACCREDITATION AND APPROVALS </h2>                                {/* College info */}
+                            fontWeight: 'bold'}}
+                > 
+                    ACCREDITATION AND APPROVALS 
+                </h2>                                                      {/* College info */}
                 <GalleryLogo/>
             </div>  
                
-            <Footer/>                                                                                            {/* For access the footer file*/}
+            <Footer/>                                                      {/* For access the footer file*/}
         </div> 
     );
 }
