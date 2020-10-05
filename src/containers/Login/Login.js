@@ -41,7 +41,7 @@ const Login = (props) => {
   }
 
     return(
-        <div>
+      <div>
         <Form className="login-form" autoComplete="off">
           <h2 className="text-center"> <b> Login </b></h2>
         <FormGroup >
@@ -52,18 +52,12 @@ const Login = (props) => {
           <Label for="Password">Password </Label>
           <Input type="password" name="password" id="Password" value={password} placeholder="Enter Password" onChange={e => setPassword(e.target.value)} />
         </FormGroup>   
-      <Button 
-        color="secondary" 
-        className=" btn-block" 
-        onClick={onClickHandler}
-      > 
-        Submit 
-      </Button> &nbsp;
+      <Button color="secondary" className=" btn-block" onClick={onClickHandler}> Submit </Button> &nbsp;
       <Button color="danger" className="btn-block" onClick={oncancel}> Cancel </Button> &nbsp;
         
       {/*<div className= "text-right">
-          <a href="/sign-up"> Forgot the password? </a>
-    </div>*/}
+        <a href="/sign-up"> Forgot the password? </a>
+      </div>*/}
     
       
       </Form>
