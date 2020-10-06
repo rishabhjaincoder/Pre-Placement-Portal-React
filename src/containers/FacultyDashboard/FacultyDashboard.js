@@ -36,7 +36,7 @@ const FacultyDashboard = (props) => {
     return (
         <div>
             <FacultyNavBar/>
-            <div className="functions"> 
+            <div className="functions" style={{marginTop: '-3%', marginRight: '30px'}}> 
                   
                 <button className="functionButtons" onClick={onAddRes}>ADD NEW RESOURCES</button>
                 <hr/>
@@ -50,7 +50,7 @@ const FacultyDashboard = (props) => {
                 <hr/>
             </div>
             <br/>
-            <div className="schedule" align="center">
+            <div className="schedule" align="center" style={{marginTop: '-1%'}}>
                 SCHEDULES <br/>
             </div>
             <div className="notices" align="center">
@@ -61,7 +61,7 @@ const FacultyDashboard = (props) => {
             <br/>
             <Calendar/>
             <AddNote/>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/> <br/>
             <Footer/>
         </div>
     );

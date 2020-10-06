@@ -9,10 +9,10 @@ import Calendar from '../../components/Calender/Calendar';
 const StudentDashboard = (props) => {
 
     return (
-        <div style={{top: '20%'}}>
+        <div>
          <StudentNavBar/> 
             <br/>
-            <div className="functions"> 
+            <div className="functions" style={{marginTop: '-3%', marginRight: '30px'}}> 
                 <button className="functionButtons">RESUME BUILDER</button>
                 <hr/>
                 <button className="functionButtons">VIEW PROGRESS REPORT</button>
@@ -40,7 +40,7 @@ const StudentDashboard = (props) => {
             <br/>
             <Calendar/>
             <AddNote/>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <br/><br/>
             <Footer/>
         </div>
     );
