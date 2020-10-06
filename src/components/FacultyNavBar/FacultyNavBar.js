@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './FacultyNavBar.css';
-
 import {
   Collapse, 
   Navbar, 
@@ -66,35 +65,35 @@ const FacultyNavBar = (props) => {
             </NavItem>
             &nbsp; &nbsp; 
             
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                View Resources
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  View test papers
-                </DropdownItem>
-                <DropdownItem>
-                  View assignments
-                </DropdownItem>
-                <DropdownItem NavLink to="/ppt-section">
-                  View PPTs
-                </DropdownItem>
-                <DropdownItem>
-                  View announcements
-                </DropdownItem>
-                <DropdownItem>
-                  View videos
-                </DropdownItem>
-                <DropdownItem>
-                  View weblinks/external resources
-                </DropdownItem>
-                <DropdownItem>
-                  View notes
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav></b>
+        <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav caret>
+            View Resources
+          </DropdownToggle>
+          <DropdownMenu right>
+            <DropdownItem>
+              View test papers
+            </DropdownItem>
+            <DropdownItem>
+              View assignments
+            </DropdownItem>
+          <DropdownItem NavLink to="/ppt-section">
+              View PPTs
+            </DropdownItem>
+            <DropdownItem>
+              View announcements
+            </DropdownItem>
+            <DropdownItem>
+              View videos
+            </DropdownItem>
+            <DropdownItem>
+              View weblinks/external resources
+            </DropdownItem>
+            <DropdownItem>
+              View notes
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
+      </Nav></b>
 
       <div className="btn-edit" style={{marginLeft: '600px'}}>
       <Button color="success" onClick={onClickHandler}> Edit Profile </Button> &nbsp;
