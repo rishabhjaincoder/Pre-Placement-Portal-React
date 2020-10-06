@@ -46,11 +46,12 @@ const FacultyNavBar = (props) => {
 
     return (
       <div className="btn-black">
-      <Navbar light expand="md">
+       <Navbar light expand="md">
         <a href="/"><Logo/></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <b>
+          
+        <b>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink href="/about">About</NavLink>

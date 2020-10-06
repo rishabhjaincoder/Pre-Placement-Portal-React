@@ -48,6 +48,7 @@ const StudentNavBar = (props) => {
         <a href="/"><Logo/></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
+      
       <b>    
       <Nav className="mr-auto" navbar>
         <NavItem>
