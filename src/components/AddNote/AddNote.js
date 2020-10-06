@@ -9,7 +9,7 @@ const AddNote = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="add-note" style={{marginBottom: '80%'}}>
+    <div className="add-note">
       <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}> Quick Note </Button>
       <Collapse isOpen={isOpen}>
         <Card>

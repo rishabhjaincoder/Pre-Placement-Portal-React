@@ -40,7 +40,7 @@ const StudentDashboard = (props) => {
             <br/>
             <Calendar/>
             <AddNote/>
-            <br/><br/>
+            <br/><br/> <br/> <br/> <br/>  <br/> <br/> <br/> <br/>
             <Footer/>
         </div>
     );

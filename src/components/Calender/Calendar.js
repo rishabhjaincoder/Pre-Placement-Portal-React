@@ -12,7 +12,7 @@ class MyApp extends Component {
  
   render() {
     return (
-      <div style={{ marginBottom: '15% '}}>
+      <div style={{ marginBottom: '3% '}}>
         <Calendar
           className="calendar"
           onChange={this.onChange}

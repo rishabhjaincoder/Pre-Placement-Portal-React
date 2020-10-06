@@ -35,6 +35,7 @@ const FacultyDashboard = (props) => {
 
     return (
         <div>
+
             <FacultyNavBar/>
             <div className="functions" style={{marginTop: '-3%', marginRight: '30px'}}> 
                   
@@ -61,7 +62,7 @@ const FacultyDashboard = (props) => {
             <br/>
             <Calendar/>
             <AddNote/>
-            <br/> <br/>
+            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
             <Footer/>
         </div>
     );
