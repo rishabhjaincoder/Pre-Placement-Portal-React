@@ -48,7 +48,7 @@ const StudentNavBar = (props) => {
         <a href="/"><Logo/></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
-          
+      <b>    
       <Nav className="mr-auto" navbar>
         <NavItem>
           <NavLink href="/about"> About </NavLink>
@@ -61,7 +61,7 @@ const StudentNavBar = (props) => {
         <NavItem>
           <NavLink href="/about"> View test score </NavLink>
         </NavItem>
-          &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; 
         
         <UncontrolledDropdown nav inNavbar>
           <DropdownToggle nav caret>
@@ -92,9 +92,12 @@ const StudentNavBar = (props) => {
         </DropdownMenu>
         </UncontrolledDropdown>
       </Nav>
-         
-      <div className="btn">
+      </b> 
+
+      <div className="btn-edit" style={{marginLeft: '600px'}}>
       <Button color="success" onClick={onClickHandler}> Edit Profile </Button> &nbsp;
+      </div>
+      <div className="btn-clse">
       <Button color="danger" onClick={onLogoutHandler}> Logout </Button>
       </div>
       
