@@ -9,8 +9,9 @@ import Calendar from '../../components/Calender/Calendar';
 const StudentDashboard = (props) => {
 
     return (
-        <div style={{top: "20%"}}>
-            <StudentNavBar/>
+        <div style={{top: '20%'}}>
+            
+                <StudentNavBar/> 
             <br/>
             <div className="functions"> 
                 <button className="functionButtons">RESUME BUILDER</button>

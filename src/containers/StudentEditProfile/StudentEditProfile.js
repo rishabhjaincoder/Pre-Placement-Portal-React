@@ -12,9 +12,9 @@ const StudentEditProfile = (props) => {
   const [dob, setdob] = useState('');
   const [motherName, setMotherName] = useState('');
   const [fatherName, setFatherName] = useState('');
-  const [percentage, setPercentage] = useState('');
-  const [projectTitle, setProjectTitle] = useState('');
-  const [techUsed, setTechUsed] = useState('');
+//  const [percentage, setPercentage] = useState('');
+//  const [projectTitle, setProjectTitle] = useState('');
+//  const [techUsed, setTechUsed] = useState('');
 
   // const validateForm = () => {
   //     return (firstName.length >0 &&
@@ -35,9 +35,9 @@ const StudentEditProfile = (props) => {
       dob: dob,
       motherName: motherName,
       fatherName: fatherName,
-      percentage: percentage,
-      projectTitle: projectTitle,
-      techUsed: techUsed,
+  //    percentage: percentage,
+  //    projectTitle: projectTitle,
+  //    techUsed: techUsed,
     };
 
     fetch('http://localhost:4000/user/updateprofile/', {

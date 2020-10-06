@@ -54,15 +54,6 @@ const Login = (props) => {
           <Label for="Password">Password </Label>
           <Input type="password" name="password" id="Password" value={password} placeholder="Enter Password" onChange={e => setPassword(e.target.value)} />
         </FormGroup>   
-<<<<<<< HEAD
-      <Button color="secondary" className=" btn-block" onClick={onClickHandler}> Submit </Button> &nbsp;
-      <Button color="danger" className="btn-block" onClick={oncancel}> Cancel </Button> &nbsp;
-        
-      {/*<div className= "text-right">
-        <a href="/sign-up"> Forgot the password? </a>
-      </div>*/}
-    
-=======
       <Button 
         color="secondary" 
         className=" btn-block" 
@@ -81,7 +72,6 @@ const Login = (props) => {
       {/*<div className= "text-right">
           <a href="/sign-up"> Forgot the password? </a>
       </div>*/}
->>>>>>> eb238883ac5ecff35463de3940a199a8021b5e04
       
       </Form>
       </div>
