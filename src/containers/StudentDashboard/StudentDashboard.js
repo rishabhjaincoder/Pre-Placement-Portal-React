@@ -10,8 +10,7 @@ const StudentDashboard = (props) => {
 
     return (
         <div style={{top: '20%'}}>
-            
-                <StudentNavBar/> 
+         <StudentNavBar/> 
             <br/>
             <div className="functions"> 
                 <button className="functionButtons">RESUME BUILDER</button>
