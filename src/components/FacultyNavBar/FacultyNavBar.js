@@ -99,7 +99,7 @@ const FacultyNavBar = (props) => {
       <Button color="success" onClick={onClickHandler}> Edit Profile </Button> &nbsp;
       </div>
       <div className="btn-clse">
-      <Button color="danger" onClick={onLogoutHandler,onabort,oncancel}> Logout </Button>
+      <Button color="danger" onClick={onLogoutHandler}> Logout </Button>
       </div>
         
         </Collapse>
