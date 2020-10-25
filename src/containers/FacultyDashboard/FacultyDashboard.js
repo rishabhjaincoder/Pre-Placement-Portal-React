@@ -6,7 +6,7 @@ import ModelExample from '../../components/AddNewResModal/ModelExample'
 import Footer from '../../components/Footer/Footer';
 import AddNote from '../../components/AddNote/AddNote';
 import Calendar from '../../components/Calender/Calendar';
-
+//import Background from '../../components/Background/Background';
 const FacultyDashboard = (props) => {
 
     const onAddRes = () => {
@@ -36,8 +36,7 @@ const FacultyDashboard = (props) => {
 
     return (
         <div>
-
-            <FacultyNavBar/>
+        <FacultyNavBar/>
             <div className="functions" style={{marginTop: '-3%', marginRight: '30px'}}> 
                 
                 <ModelExample buttonLabel="ADD NEW RESOURCES"/>
@@ -52,7 +51,7 @@ const FacultyDashboard = (props) => {
                 <hr/>
             </div>
             <br/>
-            <div className="schedule" align="center" style={{marginTop: '-1%'}}>
+            <div className="schedule" align="center">
                 SCHEDULES <br/>
             </div>
             <div className="notices" align="center">
@@ -63,7 +62,7 @@ const FacultyDashboard = (props) => {
             <br/>
             <Calendar/>
             <AddNote/>
-            <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+            <br/><br/><br/><br/><br/><br/><br/><br/> <br/>
             <Footer/>
         </div>
     );
