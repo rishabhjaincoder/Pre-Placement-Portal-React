@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Modal, Label, Button } from 'reactstrap';
 import './AddNewResModal.css';
+import Dragndrop from '../Dropzone/Dropzone';
 
-const ModalExample = (props) => {
+const AddNewRes = (props) => {
   const {
     buttonLabel,
     className
@@ -19,7 +20,8 @@ const ModalExample = (props) => {
         <div className="content">
           <div align="center">ADD RESOURCES HERE</div>
           <hr/>
-        <Label for="img">Add Test Papers </Label> <br/>
+          <Dragndrop/>
+        {/* <Label for="img">Add Test Papers </Label> <br/>
         <input type="file" id="img" name="img" accept="image/*"></input>
         <br/><br/>
         <Label for="img">Add Assignments </Label> <br/>
@@ -39,12 +41,37 @@ const ModalExample = (props) => {
         <br/><br/>
         <Label for="img">Add Notes </Label><br/>
         <input type="file" id="img" name="img" accept="image/*"></input>
-        <br/><br/>
-        <Button>DONE</Button>
+        <br/><br/> */}
+        {/* <Button>DONE</Button> */}
         </div>
       </Modal>
     </div>
   );
 }
 
-export default ModalExample;
+export default AddNewRes;
+
+
+// const Dropzone = ({ onDrop, accept }) => {
+//   const { getRootProps, getInputProps, isDragActive } = useDropzone({
+//     onDrop,
+//     accept
+//   });
+
+//   return (
+//     <div {...getRootProps()}>
+//       <input className="dropzone-input" {...getInputProps()} />
+//       <div className="text-center">
+//         {isDragActive ? (
+//           <p className="dropzone-content">Release to drop the files here</p>
+//         ) : (
+//           <p className="dropzone-content">
+//             Drag 'n' drop some files here, or click to select files
+//           </p>
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Dropzone;
