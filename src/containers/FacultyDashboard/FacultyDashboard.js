@@ -2,6 +2,7 @@ import React from 'react';
 import './FacultyDashboard.css';
 import FacultyNavBar from '../../components/FacultyNavBar/FacultyNavBar';
 import AddNewResModal from '../../components/AddNewResModal/AddNewResModal';
+import ModelExample from '../../components/AddNewResModal/ModelExample'
 import Footer from '../../components/Footer/Footer';
 import AddNote from '../../components/AddNote/AddNote';
 import Calendar from '../../components/Calender/Calendar';
@@ -10,7 +11,7 @@ const FacultyDashboard = (props) => {
 
     const onAddRes = () => {
         console.log("add res button clicked");
-        return (<AddNewResModal/>); 
+        return (<h1>hbjbhjbb</h1>); 
     } 
 
     const onAddJob = () => {
@@ -38,8 +39,8 @@ const FacultyDashboard = (props) => {
 
             <FacultyNavBar/>
             <div className="functions" style={{marginTop: '-3%', marginRight: '30px'}}> 
-                  
-                <button className="functionButtons" onClick={onAddRes}>ADD NEW RESOURCES</button>
+                
+                <ModelExample buttonLabel="ADD NEW RESOURCES"/>
                 <hr/>
                 <button className="functionButtons" onClick={onAddJob}>ADD NEW JOB POSTINGS</button>
                 <hr/>
