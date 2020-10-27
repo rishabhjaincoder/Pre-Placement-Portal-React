@@ -7,6 +7,11 @@ import Login from '../../containers/Login/Login';
 
 const LoginModal = (props) => {
 
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  //const handleShow = () => setShow(true);
+
+
   // const [showModal, setShow] = useState(false);
 
   // const handleClose = () => setShow(false);
@@ -25,7 +30,7 @@ const LoginModal = (props) => {
 
     <div className= "button" style={{position: 'absolute', marginLeft: '90%', top: '80px', fontSize: "20px", borderRadius: "12px"}}>
       <Button outline color="danger" onClick={toggle}><span> Login </span></Button>{''}
-      <Modal isOpen={modal} toggle={toggle} className={className} external={externalCloseBtn}>
+      <Modal show={show} onHide={handleClose} isOpen={modal} toggle={toggle} className={className} external={externalCloseBtn}>
         <Login/>
       </Modal>
     </div>
