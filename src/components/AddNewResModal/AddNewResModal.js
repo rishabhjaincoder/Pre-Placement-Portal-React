@@ -41,7 +41,7 @@ const AddNewRes = (props) => {
         <Label for="img">Add Notes </Label><br/>
         <input type="file" id="img" name="img" accept="image/*"></input>
         <br/><br/>
-        {/* <Button>DONE</Button> */}
+        <center><Button>UPLOAD</Button></center>
         </div>
       </Modal>
     </div>
@@ -49,28 +49,3 @@ const AddNewRes = (props) => {
 }
 
 export default AddNewRes;
-
-
-// const Dropzone = ({ onDrop, accept }) => {
-//   const { getRootProps, getInputProps, isDragActive } = useDropzone({
-//     onDrop,
-//     accept
-//   });
-
-//   return (
-//     <div {...getRootProps()}>
-//       <input className="dropzone-input" {...getInputProps()} />
-//       <div className="text-center">
-//         {isDragActive ? (
-//           <p className="dropzone-content">Release to drop the files here</p>
-//         ) : (
-//           <p className="dropzone-content">
-//             Drag 'n' drop some files here, or click to select files
-//           </p>
-//         )}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Dropzone;

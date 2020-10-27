@@ -2,16 +2,13 @@ import React from 'react';
 import './FacultyDashboard.css';
 
 import FacultyNavBar from '../../components/FacultyNavBar/FacultyNavBar';
-import AddNewResModal from '../../components/AddNewResModal/AddNewResModal'
+import AddNewResModal from '../../components/AddNewResModal/AddNewResModal';
+import AddNewTestModal from '../../components/AddNewTestModal/AddNewTestModal';
+import AddNewJobModal from '../../components/AddNewJobModal/AddNewJobModal';
 import Footer from '../../components/Footer/Footer';
 import AddNote from '../../components/AddNote/AddNote';
 import Calendar from '../../components/Calender/Calendar';
 const FacultyDashboard = (props) => {
-
-    const onAddJob = () => {
-        console.log("add job button clicked");
-        
-    } 
 
     const onViewJob = () => {
         console.log("view job button clicked");
@@ -20,12 +17,7 @@ const FacultyDashboard = (props) => {
 
     const onViewProfile = () => {
         console.log("view profile button clicked");
-        
-    } 
-
-    const onAddTest = () => {
-        console.log("add test button clicked");
-       
+        props.history.push('/studenteditprofile');
     } 
 
     return (
@@ -35,13 +27,13 @@ const FacultyDashboard = (props) => {
                 
                 <AddNewResModal buttonLabel="ADD NEW RESOURCES"/>
                 <hr/>
-                <button className="functionButtons" onClick={onAddJob}>ADD NEW JOB POSTINGS</button>
+                <AddNewJobModal buttonLabel="ADD NEW JOB POSTINGS"/>
                 <hr/>
                 <button className="functionButtons" onClick={onViewJob}>VIEW NEW JOB POSTINGS</button>
                 <hr/>
                 <button className="functionButtons" onClick={onViewProfile}>VIEW STUDENT PROFILE</button> 
                 <hr/>
-                <button className="functionButtons" onClick={onAddTest}>ADD NEW TEST</button> 
+                <AddNewTestModal buttonLabel="ADD NEW TEST"/>
                 <hr/>
             </div>
             <br/>
