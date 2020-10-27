@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Label, Button } from 'reactstrap';
 import './AddNewResModal.css';
-import Dragndrop from '../Dropzone/Dropzone';
+//import Dragndrop from '../Dropzone/Dropzone';
 
 const AddNewRes = (props) => {
   const {
@@ -20,8 +20,7 @@ const AddNewRes = (props) => {
         <div className="content">
           <div align="center">ADD RESOURCES HERE</div>
           <hr/>
-          <Dragndrop/>
-        {/* <Label for="img">Add Test Papers </Label> <br/>
+        <Label for="img">Add Test Papers </Label> <br/>
         <input type="file" id="img" name="img" accept="image/*"></input>
         <br/><br/>
         <Label for="img">Add Assignments </Label> <br/>
@@ -41,7 +40,7 @@ const AddNewRes = (props) => {
         <br/><br/>
         <Label for="img">Add Notes </Label><br/>
         <input type="file" id="img" name="img" accept="image/*"></input>
-        <br/><br/> */}
+        <br/><br/>
         {/* <Button>DONE</Button> */}
         </div>
       </Modal>
