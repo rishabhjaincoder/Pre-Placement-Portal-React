@@ -9,6 +9,7 @@ import FacultyEditProfile from './containers/FacultyEditProfile/FacultyEditProfi
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Main from './containers/Main/Main';
+import FileUploadTest from './containers/FileUploadTest/FileUploadTest';
 import { Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 const app = () => {
@@ -23,6 +24,7 @@ const app = () => {
       <Route path="/contact" component={Contact} />
       <Route path="/studenteditprofile" component={StudentEditProfile} />
       <Route path="/facultyeditprofile" component={FacultyEditProfile} />
+      <Route path="/fileuploadtest" component={FileUploadTest} />
       <Redirect to="/"/>
     </Switch>
   );
