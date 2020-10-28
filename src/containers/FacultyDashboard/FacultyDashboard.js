@@ -12,12 +12,10 @@ const FacultyDashboard = (props) => {
 
     const onViewJob = () => {
         console.log("view job button clicked");
-        
     } 
 
     const onViewProfile = () => {
         console.log("view profile button clicked");
-        props.history.push('/studenteditprofile');
     } 
 
     return (

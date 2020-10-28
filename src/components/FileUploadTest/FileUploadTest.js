@@ -98,4 +98,4 @@ const FileUploadTest = () => {
     )
 }
 
-export default FileUploadTest
+export default FileUploadTest;
