@@ -2,7 +2,7 @@ import React from 'react';
 import './FacultyDashboard.css';
 
 import FacultyNavBar from '../../components/FacultyNavBar/FacultyNavBar';
-import AddNewResModal from '../../components/AddNewResModal/AddNewResModal';
+import ModalExample from '../../components/AddNewResModal/ModelExample';
 import AddNewTestModal from '../../components/AddNewTestModal/AddNewTestModal';
 import AddNewJobModal from '../../components/AddNewJobModal/AddNewJobModal';
 import Footer from '../../components/Footer/Footer';
@@ -23,7 +23,7 @@ const FacultyDashboard = (props) => {
         <FacultyNavBar/>
             <div className="functions" style={{marginTop: '-3%', marginRight: '30px'}}> 
                 
-                <AddNewResModal buttonLabel="ADD NEW RESOURCES"/>
+                <ModalExample buttonLabel="ADD NEW RESOURCES"/>
                 <hr/>
                 <AddNewJobModal buttonLabel="ADD NEW JOB POSTINGS"/>
                 <hr/>
