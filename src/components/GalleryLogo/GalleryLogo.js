@@ -8,15 +8,15 @@ import logo6 from '../../assets/Logo6.jpg';
 
 const GalleryLogo = () => {
     return (
-        <div className='gallery'>
+        <div className='gallery my-5'>
 
-            <img className="logo1" src={logo1} height='75' alt=" NAAC GRADE A"/> &nbsp; &nbsp; &nbsp;&nbsp; 
-            <img className="logo2" src={logo2} height='75' alt=" NBA"/> &nbsp; &nbsp; &nbsp; &nbsp;
-            <img className="logo3" src={logo3} height='75' alt=" SAQS"/> &nbsp; &nbsp; &nbsp; &nbsp;
-            <img className="logo4" src={logo4} height='75' alt=" AICTE"/> &nbsp; &nbsp; &nbsp; &nbsp;
-            <img className="logo5" src={logo5} height='75' alt=" MBA "/> &nbsp; &nbsp; &nbsp;  &nbsp;
-            <img className="logo6" src={logo6} height='75' alt=" FICCI "/> &nbsp; &nbsp; &nbsp;  &nbsp;
-            
+            <img className="logo1" src={logo1} height='75' alt=" NAAC GRADE A" /> &nbsp; &nbsp; &nbsp;&nbsp;
+            <img className="logo2" src={logo2} height='75' alt=" NBA" /> &nbsp; &nbsp; &nbsp; &nbsp;
+            <img className="logo3" src={logo3} height='75' alt=" SAQS" /> &nbsp; &nbsp; &nbsp; &nbsp;
+            <img className="logo4" src={logo4} height='75' alt=" AICTE" /> &nbsp; &nbsp; &nbsp; &nbsp;
+            <img className="logo5" src={logo5} height='75' alt=" MBA " /> &nbsp; &nbsp; &nbsp;  &nbsp;
+            <img className="logo6" src={logo6} height='75' alt=" FICCI " /> &nbsp; &nbsp; &nbsp;  &nbsp;
+
         </div>
     );
 }
