@@ -9,14 +9,7 @@ const LoginModal = (props) => {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  //const handleShow = () => setShow(true);
-
-
-  // const [showModal, setShow] = useState(false);
-
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
-
+  
   const {
     className
   } = props;
