@@ -1,66 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Main.css';
 import Slider from '../../components/Slider/Slider';
-import LoginModal from '../../components/LoginModal/LoginModal';
-import Logo from '../../components/Logo/Logo';
 import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header';
 import GalleryLogo from '../../components/GalleryLogo/GalleryLogo';
-import { noAuto } from '@fortawesome/fontawesome-svg-core';
+import { Jumbotron, Container } from 'reactstrap';
 
 const Main = () => {
-
     return (
-        <div>
-            <div className="Main row justify-content-center">
-                <div className="col-12 col-md-2">
-                    <Logo />
-                </div>
-                <div className="col-12 col-md-8">
+        <>
+            <Header />
+            <div>
+                <Jumbotron fluid style={{
+                    fontFamily: "Poppins",
+                    fontSize: "200%",
+                    fontWeight: "bold",
+                    padding: "50px"
+                }} className="bg-dark mb-3" >
+                    <div className="row">
+                        <Container fluid className="col-12 col-sm-6">
+                            <h1 className="display-4">Jagan Institute of Management Studies</h1>
+                            <p className="lead"> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </p>
+                        </Container>
+                    </div>
+                </Jumbotron>
+                <Slider />
+                <div className="row">
 
-                    <div className="row justify-content-center">
-                        <b>
-                            <div className="col-12">                                          {/*Title of Website*/}
-                                <h1 style={{
-                                    fontFamily: "Poppins",
-                                    fontSize: "300%",
-                                    fontWeight: "bold",
-                                    color: "midnightblue",
-                                }}> Jagan Institute of Management Studies </h1>
-                            </div>
-                            <div className="col-12">
-                                <h3 style={{ fontSize: "120%" }}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
-                            </div>
-
-                            <div className="col-12 text-center">                              {/* Heading margin */}
-                                <h2 style={{
-                                    fontFamily: "initial",
-                                    fontWeight: "bold",
-                                }}> Pre-Placement Portal </h2>
-                            </div>
-                        </b>
-
+                    <div className="col-12 acc" align='center'>
+                        <h2 style={{
+                            fontFamily: "initial",
+                            fontWeight: 'bold'
+                        }}>
+                            ACCREDITATION AND APPROVALS
+                </h2>
+                        <GalleryLogo />
                     </div>
                 </div>
-                <div className="col-12 col-md-2 button">
-                    <LoginModal />                                              {/*About Login Button */}
-                </div>
+                <Footer />
             </div>
-
-            <Slider />                                                      {/* For access the slider */}
-            <div className="row">
-
-                <div className="col-12 acc" align='center'>
-                    <h2 style={{
-                        fontFamily: "initial",
-                        fontWeight: 'bold'
-                    }}>
-                        ACCREDITATION AND APPROVALS
-                </h2>                                                      {/* College info */}
-                    <GalleryLogo />
-                </div>
-            </div>
-            <Footer />                                                      {/* For access the footer file*/}
-        </div>
+        </>
     );
 }
 
