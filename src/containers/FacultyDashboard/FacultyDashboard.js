@@ -1,5 +1,6 @@
 import React from 'react';
 import './FacultyDashboard.css';
+import {Row, Col} from 'reactstrap'; 
 
 import FacultyNavBar from '../../components/FacultyNavBar/FacultyNavBar';
 import ModalExample from '../../components/AddNewResModal/ModelExample';
@@ -21,33 +22,42 @@ const FacultyDashboard = (props) => {
     return (
         <div>
         <FacultyNavBar/>
-            <div className="functions" style={{marginTop: '-3%', marginRight: '30px'}}> 
-                
-                <ModalExample buttonLabel="ADD NEW RESOURCES"/>
-                <hr/>
-                <AddNewJobModal buttonLabel="ADD NEW JOB POSTINGS"/>
-                <hr/>
-                <button className="functionButtons" onClick={onViewJob}>VIEW NEW JOB POSTINGS</button>
-                <hr/>
-                <button className="functionButtons" onClick={onViewProfile}>VIEW STUDENT PROFILE</button> 
-                <hr/>
-                <AddNewTestModal buttonLabel="ADD NEW TEST"/>
-                <hr/>
+            <div className="container">
+            <Row>
+                <Col md={4}>
+                    <div className="calendar_n_note">
+                        <Calendar/>
+                        <AddNote/>
+                    </div>
+                </Col>
+                <Col md={4}>
+                    <div> 
+                        <ModalExample buttonLabel="ADD NEW RESOURCES"/>
+                        <hr/>
+                        <AddNewJobModal buttonLabel="ADD NEW JOB POSTINGS"/>
+                        <hr/>
+                        <button className="functionButtons" onClick={onViewJob}>VIEW NEW JOB POSTINGS</button>
+                        <hr/>
+                        <button className="functionButtons" onClick={onViewProfile}>VIEW STUDENT PROFILE</button> 
+                        <hr/>
+                        <AddNewTestModal buttonLabel="ADD NEW TEST"/>
+                        <hr/>
+                    </div>
+                </Col>
+                <Col md={4}>
+                    <div className="schedule" align="center">
+                        SCHEDULES <br/>
+                    </div>
+                    <div className="notices" align="center">
+                        NOTICE 1 <br/>
+                        NOTICE 2 <br/>
+                        NOTICE 3 <br/>
+                    </div>
+                </Col>
+            </Row>
             </div>
-            <br/>
-            <div className="schedule" align="center">
-                SCHEDULES <br/>
-            </div>
-            <div className="notices" align="center">
-                    NOTICE 1 <br/>
-                    NOTICE 2 <br/>
-                    NOTICE 3 <br/>
-            </div>
-            <br/>
-            <Calendar/>
-            <AddNote/>
-            <br/><br/><br/><br/><br/><br/><br/><br/> <br/>
             <Footer/>
+                
         </div>
     );
 }

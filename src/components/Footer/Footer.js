@@ -1,7 +1,7 @@
 import React from "react";
 import './Footer.css';
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Row, Col} from 'reactstrap';
 import {
   faYoutube,
   faFacebook,
@@ -12,24 +12,15 @@ import {
 const FooterPage = () => {
   return (
     <div className="footer">
-    <MDBFooter color="blue" className="font-small pt-4 mt-3">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="5">
-            <p>
-            Jagan Institute of Management Studies <br/> Tel : 011-45184000, 45184001, 45184002 <br/> contact@jimsindia.org
-            </p>
-          </MDBCol>
-        </MDBRow>    
-      </MDBContainer>
-      </MDBFooter>
-
-      <MDBFooter color="blue" className="font-small pt-4 mt-3">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="5">
-          <div className="social-container">
-            {/* <h3>Social Follow</h3> */}
+      <div className="container">
+        <Row>
+          <Col md={6}>
+          Jagan Institute of Management Studies <br/> 
+          Tel : 011-45184000, 45184001, 45184002 <br/> 
+          contact@jimsindia.org
+          </Col>
+          <Col md={6}>
+            <div className="social-container">
               <a href="https://www.youtube.com/c/JIMSRohiniSector5"
               className="youtube social">
               <FontAwesomeIcon icon={faYoutube} size="2x" />
@@ -45,17 +36,11 @@ const FooterPage = () => {
               className="instagram social">
               <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
-          </div>
-      
+            </div>
+          </Col>
           Copyright &copy; {new Date().getFullYear()} All Rights Reserved with JIMS
-          <br/><br/>
-          </MDBCol>
-        </MDBRow>    
-      </MDBContainer>
-      </MDBFooter>
-
-        
-   
+        </Row>
+      </div>
     </div>
   );
 }
