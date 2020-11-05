@@ -12,6 +12,7 @@ import Main from './containers/Main/Main';
 import FileUploadTest from './containers/FileUploadTest/FileUploadTest';
 import { Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
+
 const app = () => {
 
   let routes = (
@@ -26,12 +27,14 @@ const app = () => {
       <Route path="/facultyeditprofile" component={FacultyEditProfile} />
       <Route path="/fileuploadtest" component={FileUploadTest} />
       <Redirect to="/"/>
+
     </Switch>
   );
 
   return (
     <div className="App">
-        {routes}
+      {routes}
+
     </div>
   );
 }

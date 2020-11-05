@@ -44,9 +44,9 @@ const items = [
 
 const Slider = () => (
 
-  <div className="slider">  
-    <UncontrolledCarousel items={items} />  
-  </div>    
+  <div className="slider">
+    <UncontrolledCarousel items={items} />
+  </div>
 );
 
 export default Slider;

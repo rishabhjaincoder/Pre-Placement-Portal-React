@@ -5,48 +5,62 @@ import LoginModal from '../../components/LoginModal/LoginModal';
 import Logo from '../../components/Logo/Logo';
 import Footer from '../../components/Footer/Footer';
 import GalleryLogo from '../../components/GalleryLogo/GalleryLogo';
+import { noAuto } from '@fortawesome/fontawesome-svg-core';
 
 const Main = () => {
-            
+
     return (
-        <div className="Main">
-            <Logo/>
-            <b>
-            <div align= 'center'>                                          {/*Title of Website*/}
-            <h1 style= {{
-                        fontFamily: "Poppins", 
-                        fontSize: "300%", 
-                        fontWeight: "bold",
-                        color: "midnightblue", 
-                        }}> Jagan Institute of Management Studies </h1>
-            
-            <h3 style={{fontSize: "120%"}}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
+        <div>
+            <div className="Main row justify-content-center">
+                <div className="col-12 col-md-2">
+                    <Logo />
+                </div>
+                <div className="col-12 col-md-8">
+
+                    <div className="row justify-content-center">
+                        <b>
+                            <div className="col-12">                                          {/*Title of Website*/}
+                                <h1 style={{
+                                    fontFamily: "Poppins",
+                                    fontSize: "300%",
+                                    fontWeight: "bold",
+                                    color: "midnightblue",
+                                }}> Jagan Institute of Management Studies </h1>
+                            </div>
+                            <div className="col-12">
+                                <h3 style={{ fontSize: "120%" }}> 3, Institutional Area, Sector-5, Rohini (Near Rithala Metro Station), Delhi-110085 </h3>
+                            </div>
+
+                            <div className="col-12 text-center">                              {/* Heading margin */}
+                                <h2 style={{
+                                    fontFamily: "initial",
+                                    fontWeight: "bold",
+                                }}> Pre-Placement Portal </h2>
+                            </div>
+                        </b>
+
+                    </div>
+                </div>
+                <div className="col-12 col-md-2 button">
+                    <LoginModal />                                              {/*About Login Button */}
+                </div>
             </div>
 
-            <div style={{marginLeft: '42%'}}>                              {/* Heading margin */}
-            <h2 style= {{fontFamily: "initial",
-                        fontWeight: "bold",
-                        }}> Pre-Placement Portal </h2> 
-            </div>
-            </b>
+            <Slider />                                                      {/* For access the slider */}
+            <div className="row">
 
-            <div className="button" align="right" > 
-                <LoginModal/>                                              {/*About Login Button */}
-             </div>
-            
-            <Slider/>                                                      {/* For access the slider */}    
-
-            <div className='acc' align='center'>
-                <h2 style ={{fontFamily: "initial",
-                            fontWeight: 'bold'}}
-                > 
-                    ACCREDITATION AND APPROVALS 
+                <div className="col-12 acc" align='center'>
+                    <h2 style={{
+                        fontFamily: "initial",
+                        fontWeight: 'bold'
+                    }}>
+                        ACCREDITATION AND APPROVALS
                 </h2>                                                      {/* College info */}
-                <GalleryLogo/>
-            </div>  
-               
-            <Footer/>                                                      {/* For access the footer file*/}
-        </div> 
+                    <GalleryLogo />
+                </div>
+            </div>
+            <Footer />                                                      {/* For access the footer file*/}
+        </div>
     );
 }
 

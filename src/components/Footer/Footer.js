@@ -3,10 +3,10 @@ import './Footer.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Row, Col} from 'reactstrap';
 import {
-  faYoutube,
-  faFacebook,
-  faTwitter,
-  faInstagram
+    faYoutube,
+    faFacebook,
+    faTwitter,
+    faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
 const FooterPage = () => {
@@ -43,6 +43,7 @@ const FooterPage = () => {
       </div>
     </div>
   );
+
 }
 
 export default FooterPage;
