@@ -3,7 +3,9 @@ import './FacultyNavBar.css';
 import {
   Collapse, 
   Navbar, 
+  NavbarBrand,
   NavbarToggler, 
+  NavbarText,
   Nav, 
   NavItem, 
   NavLink, 
@@ -40,33 +42,30 @@ const FacultyNavBar = (props) => {
         .catch((err) => {
           console.log(err);
         });
-        // props.history.push('/');
     }
-
+               
     return (
-      <div className="btn-black">
+      <div>
+
        <Navbar light expand="md">
-        <a href="/"><Logo/></a>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <NavbarToggler onClick={toggle} />
+            <NavbarBrand href="/"><Logo/></NavbarBrand> 
+          <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          
-        <b>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink href="/about">About</NavLink>
             </NavItem>
-            &nbsp; &nbsp; &nbsp;
+           
             <NavItem>
               <NavLink href="/contact">Contact</NavLink>
             </NavItem>
-            &nbsp; &nbsp; &nbsp;
+            
             <NavItem>
               <NavLink href="/about">View test score</NavLink>
             </NavItem>
-            &nbsp; &nbsp; 
             
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav caret>
+          <DropdownToggle nav caret >
             View Resources
           </DropdownToggle>
           <DropdownMenu right>
@@ -76,7 +75,7 @@ const FacultyNavBar = (props) => {
             <DropdownItem>
               View assignments
             </DropdownItem>
-          <DropdownItem NavLink to="/ppt-section">
+          <DropdownItem>
               View PPTs
             </DropdownItem>
             <DropdownItem>
@@ -93,15 +92,14 @@ const FacultyNavBar = (props) => {
             </DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
-      </Nav></b>
+        </Nav>
 
-      <div className="btn-edit" style={{marginLeft: '600px'}}>
+      <NavbarText className="btn-edit">      
       <Button color="success" onClick={onClickHandler}> Edit Profile </Button> &nbsp;
-      </div>
-      <div className="btn-clse">
+      </NavbarText>
+      <NavbarText className="btn-logout">
       <Button color="danger" onClick={onLogoutHandler}> Logout </Button>
-      </div>
-        
+      </NavbarText>
         </Collapse>
       </Navbar>
     </div>

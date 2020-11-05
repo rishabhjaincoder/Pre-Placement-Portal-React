@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './StudentEditProfile.css';
 import { Form, Label, Button, Row, Col, Input } from 'reactstrap';
 
@@ -12,19 +12,40 @@ const StudentEditProfile = (props) => {
   const [dob, setdob] = useState('');
   const [motherName, setMotherName] = useState('');
   const [fatherName, setFatherName] = useState('');
-//  const [percentage, setPercentage] = useState('');
-//  const [projectTitle, setProjectTitle] = useState('');
-//  const [techUsed, setTechUsed] = useState('');
+  const [password, setPassword] = useState('');
 
-  // const validateForm = () => {
-  //     return (firstName.length >0 &&
-  //             lastName.length > 0 &&
-  //             newPassword.length > 0 &&
-  //             newPassword===confirm
-  //     );
-  // }
+  useEffect(() => {
+    fetch('http://localhost:4000/user/details', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      credentials: 'include',
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        setFirstName(result.firstname)
+        setLastName(result.lastname)
+        setCourse(result.course)
+        setSemester(result.semester)
+        setPhone(result.phone)
+        setdob(result.dob)
+        setAddress(result.address)
+        setMotherName(result.mothersname)
+        setFatherName(result.fathersname)
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [])
+
+
+
 
   const onClickHandler = () => {
+    
+
+
     const alteredData = {
       firstname: firstName,
       lastname: lastName,
@@ -33,12 +54,11 @@ const StudentEditProfile = (props) => {
       phone: phone,
       address: address,
       dob: dob,
-      motherName: motherName,
-      fatherName: fatherName,
-  //    percentage: percentage,
-  //    projectTitle: projectTitle,
-  //    techUsed: techUsed,
+      mothersname: motherName,
+      fathersname: fatherName,
     };
+
+    if(password !== '') alteredData.password = password;
 
     fetch('http://localhost:4000/user/updateprofile/', {
       method: 'POST',
@@ -203,9 +223,9 @@ const StudentEditProfile = (props) => {
                     type="password"
                     name="fathername"
                     id="fathername"
-                    value={fatherName}
+                    value={password}
                     placeholder=""
-                    onChange={(e) => setFatherName(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </Col>
               </Row>

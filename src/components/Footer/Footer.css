@@ -1,12 +1,23 @@
+.footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: black;
+  position: relative;
+  color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* 
+
 .footer {
   background-color: black;
   color: white;
   left: 0;
   bottom: 0;
-}
+} */
 
 .social-container {
-    /* background: #eee; */
     padding: 25px 50px;
 }
 a.social {

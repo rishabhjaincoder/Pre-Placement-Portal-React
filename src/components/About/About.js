@@ -1,11 +1,17 @@
 import React from 'react';
 import './About.css';
 
+import Image from '../../assets/Image1.jpg';    
+
 const About = () => {
     return (
-        <div className="about">
-            <h1>ABOUT INSTITUTE</h1>
-            <hr/>
+        <div>
+            <div className="back">
+            <img className="img" src = {Image} alt={Image}/>
+            <div className="heading"><h1>ABOUT INSTITUTE</h1></div>
+            {/* <hr/> */}
+            </div>
+            <div className="about">
             Jagan Institute of Management Studies (JIMS) imparts professional education at post graduate and graduate levels in the fields of Management and Information Technology. The Institute has been working for the attainment of a mission: to develop highly skilled and professional human resource for industry and business for the past 25 years. Established in 1993, it has now acquired a commendable position as one of the premier institutes of the country. Our PGDM, PGDM-IB, PGDM-RM Programme are approved by the All India Council for Technical Education. PGDM, PGDM-IB & PGDM-RM Programmes are accredited from National Board of Accreditation (NBA) for excellence in quality education and have also been granted equivalence to MBA degree by Association of Indian Universities (AIU). Our GGSIP University affiliated programs are MCA, BBA and BCA. The MCA programme is accredited by National Board of Accreditation (NBA) for both the shifts. The National Assessment and Accreditation council (NAAC) has accredited JIMS at A grade.
             <br/><br/>
             The institute has earned appreciations and accreditations from various Govt. Bodies, industry associations and leading newspapers and channels. These include NBA, AIU, NAAC, National Institutional Ranking Framework (NIRF), FICCI, ASSOCHAM, Times of India, Competition Success Review, Business Standard, Business Today, etc.
@@ -20,6 +26,7 @@ const About = () => {
             <br/><br/>
             JIMS thus proves to be an ideal place for those wishing to engage in academic pursuits and seek intellectual fulfilment.
             <br/>
+        </div>
         </div>
     );
 }
